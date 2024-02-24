@@ -8,9 +8,9 @@ import page1 from './pages/page1';
 import page2 from './pages/page2';
 import index from './pages/index'
 const routes = [
-  index,
-  page1,
-  page2
+  {name: 'index', page: index},
+  {name: 'page1', page: page1},
+  {name: 'page2', page: page2}
 ]
 
 function createElement (component) {
@@ -19,10 +19,9 @@ function createElement (component) {
 
 const router = createBrowserRouter(routes.map(route => ({
   path: '/' + (route.name === 'index' ? '' : route.name),
-  element: createElement(route)
+  element: createElement(route.page)
 })))
 
-console.log(routes.map(route => route.name))
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
