@@ -8,7 +8,7 @@ const menuItems = [
 const menu = (currPath) =>  menuItems.map(el => {
   return (
     <Link to={el.route} key={el.label}>
-      <div className={ (currPath === el.route? 'text-accent-blue ' :'text-text-header ') +"flex gap-[8px] h-[40px] px-[24px] items-center"} >
+      <div className={ (currPath === el.route? 'text-accent-blue ' :'text-text-header ') +"transition duration-300 flex gap-[8px] h-[40px] px-[24px] items-center"} >
             
         <MailOutlined />
         <span className="text-base">{el.label}</span>
@@ -26,7 +26,7 @@ const upperMenuItems = [
 const upperMenu = (currPath) => upperMenuItems.map(el=> {
   return (
     
-      <div className={(el.route === currPath ? 'border-b-4 border-accent-blue pt-1 ': '') + 'px-4 flex justify-center items-center cursor-pointer'} key={el.label}>
+      <div className={(el.route === currPath ? 'border-b-4 border-accent-blue pt-1 ': '') + 'transition duration-300 px-4 flex justify-center items-center cursor-pointer'} key={el.label}>
         <Link to={el.route}>
         <span className={(el.route === currPath ? 'text-accent-blue ': 'text-text-header ') + 'text-lg font-bold'}>{el.label}</span>
         </Link>
