@@ -34,7 +34,6 @@ const logo = (
 </svg>)
 
 function App({children}) {
-  console.log(children)
   return (
    <div className='flex flex-col min-h-[100vh]'>
      <header className='h-[54px] w-full flex'>
