@@ -33,7 +33,7 @@ function App({children}) {
   
   const mobileMenu = (currPath) => upperMenuItems.map(el=> {
     return (
-      <div className={(el.route === currPath ? 'text-accent-blue bg-opacity-7 ': 'text-text-header ') + 'bg-background-container transition-colors duration-300'} key={el.label}>
+      <div className={(el.route === currPath ? 'text-accent-blue bg-opacity-7 ': 'text-text-header ') + 'bg-background-container transition-colors duration-300 shadow-sm'} key={el.label}>
         <Link to={el.route} className='flex flex-col items-center justify-center h-full'>
           <HomeOutlined />
           <span>{el.label}</span>
@@ -96,7 +96,7 @@ function App({children}) {
         
          
      </div>
-    <div className='sticky bottom-0 bg-background-container md:hidden h-16 grid grid-cols-3'>
+    <div className='sticky bottom-0 bg-background-container border-t md:hidden h-16 grid grid-cols-3'>
         {mobileMenu(location)}
     </div>
    </div>

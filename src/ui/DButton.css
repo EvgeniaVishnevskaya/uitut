@@ -18,16 +18,22 @@ button.small {
     @apply py-0 px-1.5
 }
 button:hover {
-    @apply opacity-70     
+    @apply md:opacity-70     
 }
 button:not(.primary):hover {
-    @apply text-accent-blue
+    @apply md:text-accent-blue
 }
 button.text {
     @apply py-1 px-2 bg-transparent text-text-button
 }
 
 button.text:hover {
-    @apply bg-gray-100 rounded-md
+    @apply md:bg-gray-100 md:rounded-md
 }
 
+button:active:not(.text) {
+    @apply shadow-lg
+}
+button:active.text {
+    @apply md:shadow-lg
+}
