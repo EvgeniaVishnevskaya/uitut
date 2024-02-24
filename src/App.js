@@ -1,7 +1,7 @@
 import { MailOutlined } from '@ant-design/icons'
-
+import { Children } from 'react'
 const menuItems = [
- { label: 'Пункт 1'},
+ {label: 'Пункт 1'},
  {label: 'Пункт 2'},
  {label: 'Пункт 3'}
 ]
@@ -21,7 +21,7 @@ const upperMenuItems = [
 const upperMenu = upperMenuItems.map(el=> {
   return (
     <div className='px-4 flex justify-center items-center' key={el.label}>
-      <span className='text-lg text-text-header underline'>{el.label}</span>
+      <span className='text-lg text-text-header underline text-bold'>{el.label}</span>
     </div>
   )
 })
@@ -34,7 +34,8 @@ const logo = (
 <path d="M87.8708 0H110V5.2955H101.881V21.5264H95.99V5.2955H87.8708V0Z" fill="#2678FB"/>
 </svg>)
 
-function App() {
+function App({children}) {
+  console.log(children)
   return (
    <div className='flex flex-col min-h-[100vh]'>
      <header className='h-[54px] w-full flex'>
@@ -53,8 +54,9 @@ function App() {
        <div className='col-span-4 flex flex-col gap-6'>
         <span className='text-base text-text-disable'>Breadcrumb link / Breadcrumb link / Breadcrumb link / <span className='text-accent-blue'>Breadcrumb link </span> </span>
         <main className='grow'>
-          
-            Тестовый контент
+           <div>
+              {children()}
+           </div>
           </main>  
         <footer className='w-full justify-center flex py-6'>
            <a href='https://uitut.ru' className='text-base'>uitut.ru</a>
