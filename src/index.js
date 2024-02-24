@@ -22,7 +22,6 @@ const router = createHashRouter(routes.map(route => ({
   path: '/' + (route.name === 'index' ? '' : route.name),
   element: createElement(route.page)
 })))
-console.log(router)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
