@@ -1,5 +1,4 @@
 import { MailOutlined } from '@ant-design/icons'
-import { Children } from 'react'
 const menuItems = [
  {label: 'Пункт 1'},
  {label: 'Пункт 2'},

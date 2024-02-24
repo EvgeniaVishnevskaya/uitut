@@ -18,10 +18,11 @@ function createElement (component) {
 }
 
 const router = createBrowserRouter(routes.map(route => ({
-  path: '/' + route.name,
+  path: '/' + (route.name === 'index' ? '' : route.name),
   element: createElement(route)
 })))
 
+console.log(routes.map(route => route.name))
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
