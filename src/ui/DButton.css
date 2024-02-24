@@ -1,0 +1,11 @@
+
+button.primary {
+    @apply bg-accent-blue px-4 py-1 rounded text-text-white
+}
+button:hover {
+    @apply opacity-70     
+}
+
+button.text {
+    @apply py-1 px-2 bg-transparent 
+}
