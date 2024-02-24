@@ -1,11 +1,33 @@
 
 button.primary {
-    @apply bg-accent-blue px-4 py-1 rounded text-text-white
+    @apply bg-accent-blue rounded-md text-white
+}
+button.default {
+    @apply bg-transparent rounded-md border border-accent-blue text-text-button
+}
+button.medium {
+    @apply px-3 py-1 
+}
+button.dashed {
+    @apply rounded-md border border-dashed border-accent-blue text-text-button
+}
+button.large {
+    @apply px-3 py-2
+}
+button.small {
+    @apply py-0 px-1.5
 }
 button:hover {
     @apply opacity-70     
 }
-
-button.text {
-    @apply py-1 px-2 bg-transparent 
+button:not(.primary):hover {
+    @apply text-accent-blue
 }
+button.text {
+    @apply py-1 px-2 bg-transparent text-text-button
+}
+
+button.text:hover {
+    @apply bg-gray-100 rounded-md
+}
+
