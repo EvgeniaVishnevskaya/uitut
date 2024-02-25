@@ -1,35 +1,22 @@
-import { HomeOutlined, MailOutlined, UpOutlined } from '@ant-design/icons'
+import { HomeOutlined } from '@ant-design/icons'
 import { Link, useLocation  } from 'react-router-dom'
+import Menu from './ui/menu'
+
 
 
 function App({children}) {
-  const menuItems = [
+  const location = useLocation()?.pathname
+  const upperMenuItems = [
     {label: 'Главная', isActive: true, route: '/'},
     {label: 'Страница 1', isActive: false, route: '/page1'},
     {label: 'Страница 2', isActive: false, route: '/page2'}
   ]
-  const location = useLocation()?.pathname
-  const breadcrumb = (crumbs) => location.split('/').slice(1).map(e=> {
-    return menuItems.find(el => el.route === ('/' + e)).label
-  })
-  const menu = (currPath) =>  menuItems.map(el => {
-    return (
-      <Link to={el.route} key={el.label}>
-        <div className={ (currPath === el.route? 'text-accent-blue ' :'text-text-header ') +"transition duration-300 flex gap-[8px] h-[40px] px-[24px] items-center"} >
-              
-          <MailOutlined />
-          <span className="text-base">{el.label}</span>
-              
-        </div>
-      </Link>
-    )
-  })
+  // const breadcrumb = () => location.split('/').slice(1).map(e=> {
+  //   return upperMenuItems.find(el => el.route === ('/' + e)).label
+  // })
+
   
-  const upperMenuItems = [
-    {label: 'Главная', isActive: true, route: '/', icon: HomeOutlined},
-    {label: 'Страница 1', isActive: false, route: '/page1', icon: MailOutlined},
-    {label: 'Страница 2', isActive: false, route: '/page2', icon: UpOutlined}
-  ]
+ 
   
   const mobileMenu = (currPath) => upperMenuItems.map(el=> {
     return (
@@ -77,11 +64,11 @@ function App({children}) {
      </header>
      <div className='flex flex-col w-full md:grid md:grid-cols-5 grow gap-4 border-t'>
        <nav className='bg-background-container hidden md:flex flex-col gap-[8px] py-[4px] sm:hidden'>
-          {menu(location)}
+          { Menu(location) }
           
        </nav>
        <div className='px-4 md:px-0 col-span-5 md:col-span-4 flex flex-col gap-6 flex-grow'>
-        <span className='text-base text-text-disable'>{breadcrumb()}</span>
+        {/* <span className='text-base text-text-disable'>{breadcrumb()}</span> */}
         <main className='grow'>
            <div>
               {children()}
