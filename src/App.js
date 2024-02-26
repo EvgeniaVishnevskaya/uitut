@@ -1,22 +1,20 @@
 import { HomeOutlined } from '@ant-design/icons'
 import { Link, useLocation  } from 'react-router-dom'
+import Breadcrumbs from './ui/breadcrumbs'
+
 import Menu from './ui/menu'
 
 
 
 function App({children}) {
   const location = useLocation()?.pathname
+  console.log(location)
   const upperMenuItems = [
     {label: 'Главная', isActive: true, route: '/'},
     {label: 'Страница 1', isActive: false, route: '/page1'},
     {label: 'Страница 2', isActive: false, route: '/page2'}
   ]
-  // const breadcrumb = () => location.split('/').slice(1).map(e=> {
-  //   return upperMenuItems.find(el => el.route === ('/' + e)).label
-  // })
-
   
- 
   
   const mobileMenu = (currPath) => upperMenuItems.map(el=> {
     return (
@@ -69,6 +67,9 @@ function App({children}) {
        </nav>
        <div className='px-4 md:px-0 col-span-5 md:col-span-4 flex flex-col gap-6 flex-grow'>
         {/* <span className='text-base text-text-disable'>{breadcrumb()}</span> */}
+        <div>
+         <Breadcrumbs />
+        </div>
         <main className='grow'>
            <div>
               {children()}

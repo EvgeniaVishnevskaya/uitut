@@ -32,7 +32,7 @@ button.text:hover {
 }
 
 button:active:not(.text) {
-    @apply shadow-lg
+    @apply shadow-md
 }
 button:active.text {
     @apply md:shadow-lg
