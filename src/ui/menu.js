@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom'
-import { MailOutlined } from "@ant-design/icons" 
+import { MailOutlined, UpOutlined, DownOutlined } from "@ant-design/icons" 
 import { useState } from "react"
 
 export default function Menu(currPath) {
@@ -22,9 +22,14 @@ export default function Menu(currPath) {
         if (el.children) 
         return (
           <div key={el.label}>
-          <div className={ (currPath === el.route? 'text-accent-blue ' :'text-text-header ') +"flex gap-[8px] h-[40px] px-[24px] items-center cursor-pointer "} >        
-          <MailOutlined />
-          <span className="text-base select-none" onClick={()=> open(i)}>{el.label}</span>
+          <div className="flex gap-[8px] h-[40px] px-[24px] items-center cursor-pointer justify-between" >        
+          <Link to={el.route}>
+          <div className={ (currPath === el.route? 'text-accent-blue ' :'text-text-header ') +'flex gap-2 items-center'}>
+            <MailOutlined />
+            <span className="text-base select-none" >{el.label}</span>
+          </div>
+          </Link>
+          <div className="pb-1" onClick={()=> open(i)}>{el.isOpen ? <UpOutlined /> : <DownOutlined />}</div>
           </div>
           <div className="ml-5">
           { el.isOpen ?  el.children.map(child => {

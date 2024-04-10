@@ -11,14 +11,14 @@ import section1 from './pages/section1';
 import section2 from './pages/section2';
 
 const routes = [
-  {name: 'index', page: index},
-  {name: 'page1', page: page1},
-  {name: 'page2', page: page2},
+  {route: 'index', page: index},
+  {route: 'page1', page: page1},
+  {route: 'page2', page: page2},
   {
-    name: 'page2/section1', page: section1
+    route: 'page2/section1', page: section1
   },
   {
-    name: 'page2/section2', page: section2
+    route: 'page2/section2', page: section2
   },
   
 ]
@@ -28,7 +28,7 @@ function createElement (component) {
 }
 
 const router = createHashRouter(routes.map(route => ({
-  path: '/' + (route.name === 'index' ? '' : route.name),
+  path: '/' + (route.route === 'index' ? '' : route.route),
   element: createElement(route.page)
 })))
 

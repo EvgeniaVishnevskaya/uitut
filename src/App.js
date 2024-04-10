@@ -52,20 +52,20 @@ function App({children}) {
   
   return (
    <div className='flex flex-col min-h-[100vh]'>
-     <header className='h-[54px] w-full flex justify-center md:justify-normal'>
-      <div className='py-4 px-[50px] md:pr-24'>
+     <header className='h-[54px] w-full flex justify-center sm:justify-normal'>
+      <div className='py-4 px-[50px] sm:pr-24'>
         <Link to="/">{logo}</Link>
       </div>
-      <div className='hidden md:flex '>
+      <div className='hidden sm:flex '>
         { upperMenu(location) }
       </div>
      </header>
      <div className='flex flex-col w-full md:grid md:grid-cols-5 grow gap-4 border-t'>
-       <nav className='bg-background-container hidden md:flex flex-col gap-[8px] py-[4px] sm:hidden'>
+       <nav className='bg-background-container hidden lg:flex flex-col gap-[8px] py-[4px] sm:hidden'>
           { Menu(location) }
           
        </nav>
-       <div className='px-4 md:px-0 col-span-5 md:col-span-4 flex flex-col gap-6 flex-grow'>
+       <div className='px-4 sm:px-0 col-span-5 lg:col-span-4 flex flex-col gap-6 flex-grow'>
         {/* <span className='text-base text-text-disable'>{breadcrumb()}</span> */}
         <div>
          <Breadcrumbs />
