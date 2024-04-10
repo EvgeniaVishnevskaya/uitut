@@ -1,17 +1,17 @@
 import './Card.css'
-
-export default function Card ({header, description, children}) {
-    return <div className="bg-background-content flex flex-col items-center rounded-md hover:shadow-sm card cursor-pointer w-64">
-      <div className='w-full h-full relative'>
-        <div className="card-top py-10 flex items-center justify-center transition-all duration-300 ease-linear">
-            <div className='opacity-100 z-10'>
-                {children}
+import GetImage from './cardItems'
+export default function Card ({header, description, children, color, hovercolor, type, image}) {
+    return <div className={`${color} hover:${hovercolor} flex flex-col items-center rounded-md card cursor-pointer w-64 h-full`}>
+      <div className='card-top-cover relative'>
+        <div className={`${hovercolor} image-cover-${type} card-top flex items-center justify-center transition-all duration-300 ease-linear h-full rounded-md`}>
+            <div className='z-10'>
+              <GetImage name={image} />
             </div>
         </div>
       </div>
-      <div className="bg-background-container p-6 card-bottom w-full rounded-b-md transition-all duration-300 ease-linear">
-        <p className="text-xl font-italic leading-loose">{header}</p>
-        <p className="text-base faded">{description}</p>
+      <div className={`p-6 card-bottom w-full rounded-b-md transition-all duration-300 ease-linear `}>
+        <p className="text-xl font-italic">{header}</p>
+        <p className="text-base font-light">{description}</p>
       </div>
     </div>
 }

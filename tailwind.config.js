@@ -2,6 +2,13 @@
 export const content = [
   "./src/**/*.{js,jsx,ts,tsx}",
 ];
+
+export const safelist = [
+  {
+    pattern: /bg-/,
+    variants: ['hover', 'focus']
+  }
+];
 export const theme = {
   extend: {
     colors: {
@@ -14,7 +21,17 @@ export const theme = {
       background: {
         container: '#FAFBFF',
         content: '#E5EFFF',
-        controls: '#C2D9FD'
+        controls: '#C2D9FD',
+        pink: {
+          100: '#F2018B',
+          200: '#FFA9DA',
+          300: '#FFE3F4'
+        },
+        orange: {
+          100: '#F76507',
+          200: '#FDAE7B',
+          300: '#FFE7D8'
+        }
       },
       main: {
         active: '#5AA4FB',
@@ -29,6 +46,24 @@ export const theme = {
         header: '#2B2B2D',
         main: '#636363',
         white: '#FFFFFF'
+      },
+      function: {
+        success: {
+          active: '#00BD40',
+          hover: '#4DD179',
+          focus: '#00A136'
+        },
+        warning: {
+          active: '#F59728',
+          hover: '#F8B669',
+          focus: '#D08022'
+        },
+        danger: {
+          primary: '#F84141',
+          active: '#BD0000',
+          hover: '#D14D4D',
+          focus: '#A10000'
+        } 
       }
     }
   },

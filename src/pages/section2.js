@@ -6,6 +6,6 @@ export default function section2() {
             <DInput type="password"></DInput>
             <DInput></DInput>
             <DInput disabled></DInput>
-            <DInput search></DInput>
+            <DInput search="true"></DInput>
         </div>)
 }

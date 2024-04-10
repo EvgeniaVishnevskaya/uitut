@@ -17,11 +17,8 @@ export default function DInput(props){
         <div className="absolute left-[10px] bg-background-content z-10">
             <SearchOutlined />
         </div> :
-        undefined
-    
-        
+        undefined  
     const disabled = props.disabled ? 'text-text-disable bg-background-content  border rounded border-gray-100 cursor-not-allowed outline-none' : 'bg-background-content border rounded border-main-primary outline-none'
-    
     if (props?.type === 'password') {
     const [showPassword, setShowPassword] = useState(false)
     const state = showPassword ? 'password' : 'text'

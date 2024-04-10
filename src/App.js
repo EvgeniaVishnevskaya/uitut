@@ -10,9 +10,9 @@ function App({children}) {
   const location = useLocation()?.pathname
   console.log(location)
   const upperMenuItems = [
-    {label: 'Главная', isActive: true, route: '/'},
-    {label: 'Страница 1', isActive: false, route: '/page1'},
-    {label: 'Страница 2', isActive: false, route: '/page2'}
+    {label: 'Уроки', isActive: true, route: '/'},
+    {label: 'Документация', isActive: false, route: '/page1'},
+    {label: 'Обратная связь', isActive: false, route: '/page2'}
   ]
   
   
