@@ -1,4 +1,5 @@
-import { HomeOutlined } from '@ant-design/icons'
+import { HomeOutlined, UnorderedListOutlined, CloseOutlined } from '@ant-design/icons'
+import { useState } from 'react'
 import { Link, useLocation  } from 'react-router-dom'
 import Breadcrumbs from './ui/breadcrumbs'
 
@@ -7,6 +8,7 @@ import Menu from './ui/menu'
 
 
 function App({children}) {
+  const [menu, setMenu] = useState(false)
   const location = useLocation()?.pathname
   const upperMenuItems = [
     {label: 'Уроки', isActive: true, route: '/lessons'},
@@ -17,25 +19,25 @@ function App({children}) {
   
   const mobileMenu = (currPath) => upperMenuItems.map(el=> {
     return (
+   
+      
       <div className={(el.route === currPath ? 'text-accent-blue bg-opacity-7 ': 'text-text-header ') + 'bg-background-container transition-colors duration-300 shadow-sm text-sm'} key={el.label}>
         <Link to={el.route} className='flex flex-col items-center justify-center h-full'>
           <HomeOutlined />
           <span>{el.label}</span>
         </Link>
       </div>
-      
+     
     )
   })
   
   const upperMenu = (currPath) => upperMenuItems.map(el=> {
     return (
-      
         <div className={(el.route === currPath ? 'border-b-4 border-accent-blue pt-1 ': '') + 'transition duration-300 px-4 flex justify-center items-center cursor-pointer'} key={el.label}>
           <Link to={el.route}>
           <span className={(el.route === currPath ? 'text-accent-blue ': 'text-text-header ') + 'text-lg font-bold'}>{el.label}</span>
           </Link>
         </div>
-      
     )
   })
   const logo = (
@@ -59,16 +61,18 @@ function App({children}) {
         { upperMenu(location) }
       </div>
      </header>
-     <div className='flex flex-col w-full md:grid md:grid-cols-5 grow gap-4 border-t items-center'>
-       {/* <nav className='bg-background-container hidden lg:flex flex-col gap-[8px] py-[4px] sm:hidden'>
-          { Menu(location) }
+     <div className='flex flex-col w-full md:grid md:grid-cols-5 grow gap-4 border-t items-center relative'>
+       <nav className={`bg-background-container ${!menu ? 'hidden' : 'block'} h-full z-30 lg:absolute top-0 left-0 flex-col gap-[8px] py-[4px] transition-all duration-300`}>
+        <div className="flex justify-end" onClick={e => setMenu(false)}><CloseOutlined /></div>
+        { Menu(location) }
           
-       </nav> */}
+       </nav>
        <div className='px-4 sm:px-0 col-span-5 lg:col-span-5 flex flex-col gap-6 flex-grow'>
         {/* <span className='text-base text-text-disable'>{breadcrumb()}</span> */}
         <div>
          <Breadcrumbs />
         </div>
+        <div onClick={e => setMenu(true)}><UnorderedListOutlined /></div>
         <main className='grow'>
            <div>
               {children()}

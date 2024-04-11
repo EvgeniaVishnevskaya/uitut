@@ -14,7 +14,7 @@ export default function CardGenerate({menu}) {
                                 <p className="font-light">{el.text}</p>
                             </div>)
                         if (el.type === 'card') return (
-                            <Link to={'/page2/section1'} className="h-[346px]" key={el.header}>
+                            <Link to={el.link} className="h-[346px]" key={el.header}>
                                 <Card header={el.header} description={el.description} color={ el.color ?? cat.colorStyle.color} hovercolor={el.hovercolor ?? cat.colorStyle.hovercolor } type={el.styleType ?? cat.styleType} image={el.image}> 
                                 </Card>
                             </Link> 
