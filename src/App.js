@@ -8,11 +8,10 @@ import Menu from './ui/menu'
 
 function App({children}) {
   const location = useLocation()?.pathname
-  console.log(location)
   const upperMenuItems = [
-    {label: 'Уроки', isActive: true, route: '/'},
-    {label: 'Документация', isActive: false, route: '/page1'},
-    {label: 'Обратная связь', isActive: false, route: '/page2'}
+    {label: 'Уроки', isActive: true, route: '/lessons'},
+    {label: 'Документация', isActive: false, route: '/documentation'},
+    {label: 'Обратная связь', isActive: false, route: '/contacts'}
   ]
   
   

@@ -6,12 +6,14 @@ import { useState } from "react"
 export default function Menu(currPath) {
     const [opened, setOpened] = useState([
         {label: 'Главная', isOpen: false, isActive: true, route: '/'},
-        {label: 'Страница 1', isOpen: false, isActive: false, route: '/page1'},
-        {label: 'Страница 2', isOpen: false, route: '/page2', 
+        {label: 'Уроки', isOpen: false, isActive: false, route: '/lessons', 
         children: [
-          {label: 'Секция 1', isActive: true, route: '/page2/section1'},
-          {label: 'Секция 2', isActive: false, route: '/page2/section2'}
-        ]}
+          {label: 'Карта сайта', isActive: true, route: '/lessons/sitemap'},
+          {label: 'Прототип', isActive: false, route: '/lessons/prototype'}
+        ]},
+        {label: 'Документация', isOpen: false, route: '/documentation' },
+        {label: 'Обратная связь', isOpen: false, route: '/contacts' }
+        
         ])  
       const open = (i) => {
         const arr = opened

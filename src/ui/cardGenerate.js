@@ -11,11 +11,11 @@ export default function CardGenerate({menu}) {
                     {cat.elements.map(el => {
                         if (el.type === 'text') return (
                             <div className="col-span-2" key={el.text}>
-                                <p>{el.text}</p>
+                                <p className="font-light">{el.text}</p>
                             </div>)
                         if (el.type === 'card') return (
                             <Link to={'/page2/section1'} className="h-full" key={el.header}>
-                                <Card header={el.header} description={el.description} color={cat.colorStyle.color} hovercolor={cat.colorStyle.hovercolor} type={cat.type} image={el.image}> 
+                                <Card header={el.header} description={el.description} color={ el.color ?? cat.colorStyle.color} hovercolor={el.hovercolor ?? cat.colorStyle.hovercolor } type={el.styleType ?? cat.styleType} image={el.image}> 
                                 </Card>
                             </Link> 
                         )   

@@ -11,6 +11,10 @@ export const safelist = [
 ];
 export const theme = {
   extend: {
+    fontFamily: {
+      'unbounded': ['Unbouded'],
+      'inter': '"Inter tight"'
+    },
     colors: {
       accent: {
         blue: '#2678FB',

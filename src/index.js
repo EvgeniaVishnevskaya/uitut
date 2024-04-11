@@ -12,14 +12,16 @@ import section2 from './pages/section2';
 
 const routes = [
   {route: 'index', page: index},
-  {route: 'page1', page: page1},
-  {route: 'page2', page: page2},
+  {route: 'lessons', page: page1},
+  {route: 'documentation', page: page2},
+  {route: 'contacts', page: page2},
   {
-    route: 'page2/section1', page: section1
+    route: 'lessons/sitemap', page: section1
   },
   {
-    route: 'page2/section2', page: section2
+    route: 'lessons/prototype', page: section2
   },
+
   
 ]
 

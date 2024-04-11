@@ -1,6 +1,6 @@
 import './Card.css'
 import GetImage from './cardItems'
-export default function Card ({header, description, children, color, hovercolor, type, image}) {
+export default function Card ({header, description, color, hovercolor, type, image}) {
     return <div className={`${color} hover:${hovercolor} flex flex-col items-center rounded-md card cursor-pointer w-64 h-full`}>
       <div className='card-top-cover relative'>
         <div className={`${hovercolor} image-cover-${type} card-top flex items-center justify-center transition-all duration-300 ease-linear h-full rounded-md`}>
