@@ -5,6 +5,10 @@ button.primary {
 button.default {
     @apply bg-transparent rounded-md border border-accent-blue text-text-button
 }
+
+button.disabled {
+    @apply cursor-not-allowed grayscale   
+}
 button.medium {
     @apply px-3 py-1 
 }
@@ -17,23 +21,22 @@ button.large {
 button.small {
     @apply py-0 px-1.5
 }
-button:hover {
+button:hover:not(.disabled) {
     @apply md:opacity-70     
 }
-button:not(.primary):hover {
+button:not(.primary):not(.disabled):hover {
     @apply md:text-accent-blue
 }
 button.text {
     @apply py-1 px-2 bg-transparent text-text-button
 }
 
-button.text:hover {
+button.text:hover:not(.disabled) {
     @apply md:bg-gray-100 md:rounded-md
 }
-
-button:active:not(.text) {
+button:active:not(.text):not(.disabled) {
     @apply shadow-md
 }
-button:active.text {
+button:active.text:not(.disabled) {
     @apply md:shadow-lg
 }

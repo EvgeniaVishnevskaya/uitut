@@ -11,13 +11,13 @@ function App({children}) {
   const upperMenuItems = [
     {label: 'Уроки', isActive: true, route: '/lessons'},
     {label: 'Документация', isActive: false, route: '/documentation'},
-    {label: 'Обратная связь', isActive: false, route: '/contacts'}
+    {label: 'Контакты', isActive: false, route: '/contacts'}
   ]
   
   
   const mobileMenu = (currPath) => upperMenuItems.map(el=> {
     return (
-      <div className={(el.route === currPath ? 'text-accent-blue bg-opacity-7 ': 'text-text-header ') + 'bg-background-container transition-colors duration-300 shadow-sm'} key={el.label}>
+      <div className={(el.route === currPath ? 'text-accent-blue bg-opacity-7 ': 'text-text-header ') + 'bg-background-container transition-colors duration-300 shadow-sm text-sm'} key={el.label}>
         <Link to={el.route} className='flex flex-col items-center justify-center h-full'>
           <HomeOutlined />
           <span>{el.label}</span>
@@ -59,12 +59,12 @@ function App({children}) {
         { upperMenu(location) }
       </div>
      </header>
-     <div className='flex flex-col w-full md:grid md:grid-cols-5 grow gap-4 border-t'>
-       <nav className='bg-background-container hidden lg:flex flex-col gap-[8px] py-[4px] sm:hidden'>
+     <div className='flex flex-col w-full md:grid md:grid-cols-5 grow gap-4 border-t items-center'>
+       {/* <nav className='bg-background-container hidden lg:flex flex-col gap-[8px] py-[4px] sm:hidden'>
           { Menu(location) }
           
-       </nav>
-       <div className='px-4 sm:px-0 col-span-5 lg:col-span-4 flex flex-col gap-6 flex-grow'>
+       </nav> */}
+       <div className='px-4 sm:px-0 col-span-5 lg:col-span-5 flex flex-col gap-6 flex-grow'>
         {/* <span className='text-base text-text-disable'>{breadcrumb()}</span> */}
         <div>
          <Breadcrumbs />

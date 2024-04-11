@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { DButton } from '../ui/DButton';
 import sitemap1 from './../background/images/sitemap_1.png';
 import sitemap2 from './../background/images/sitemap_2.png';
 
@@ -111,8 +113,19 @@ export default function sitemap() {
                 <div className="flex justify-end">
                     <span className="font-inter">Пример карты сайта для обучающей платформы.</span>
                 </div>
-                <div className="mt-12 w-2/3">
+                <div className="my-12 w-2/3">
                     <span className='font-inter text-xl'>Карта сайта — это важный инструмент для планирования и организации контента на сайте. Она помогает не только дизайнерам, но и пользователям лучше понять структуру сайта и найти нужную информацию.</span>
+                </div>
+                <div className='flex justify-end gap-6'>
+                    <Link>
+                        <DButton disabled>Предыдущая глава</DButton>
+                    </Link>
+                    <Link to={'/lessons'}>
+                        <DButton>Все уроки</DButton>
+                    </Link>
+                    <Link>
+                        <DButton type="primary">Следующая глава</DButton>
+                    </Link>
                 </div>
             </div>
         </div>

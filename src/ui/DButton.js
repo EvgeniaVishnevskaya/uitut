@@ -1,12 +1,12 @@
 import './DButton.css'
 
-export function DButton ({type, size, ...props}) { 
-    const buttonClass = (type ? type : 'default') + ' ' + (size ? size : 'medium')
+export function DButton ({type, size, disabled, ...props}) { 
+    const buttonClass = (disabled ? 'disabled' : '') + ' ' +(type ? type : 'default') + ' ' + (size ? size : 'medium')
     delete props?.type
     delete props.size
     return type === 'link' ? (<a {...props}>{props.children}</a>) : (
         <div>
-            <button className={buttonClass} {...props}>
+            <button className={buttonClass} disabled={disabled ? "disabled" : ""} {...props}>
             {props.children}
         </button>
         </div>

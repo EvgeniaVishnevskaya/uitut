@@ -11,7 +11,7 @@ export default function Card ({header, description, color, hovercolor, type, ima
       </div>
       <div className={`p-6 card-bottom w-full rounded-b-md transition-all duration-300 ease-linear `}>
         <p className="text-xl font-italic">{header}</p>
-        <p className="text-base font-light">{description}</p>
+        <p className="text-base font-inter">{description}</p>
       </div>
     </div>
 }
