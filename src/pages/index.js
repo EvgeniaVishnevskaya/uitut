@@ -1,3 +1,3 @@
-export default function page1() {
+export default function Index() {
     return (<div>main</div>)
 }

@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import { DButton } from '../ui/DButton';
-import sitemap1 from './../background/images/sitemap_1.png';
-import sitemap2 from './../background/images/sitemap_2.png';
+import { DButton } from './../../ui/DButton'
+import sitemap1 from './../../background/images/sitemap_1.png';
+import sitemap2 from './../../background/images/sitemap_2.png';
 
 
-export default function sitemap() {
+export default function Sitemap() {
     return (<>
         <div className="flex flex-col gap-36">
             <div className="flex flex-col gap-[72px] bg-background-pink-300  rounded-xl">
@@ -87,7 +87,7 @@ export default function sitemap() {
                         <span className='font-light text-base font-inter'>Затем нужно определить, как эти разделы и страницы будут связаны между собой. Это можно представить в виде дерева, где корнем является главная страница, а ветвями — все остальные разделы и страницы</span>
                     </div>
                 </div>
-                <div className='flex gap-2 lg:mt-16 lg:ml-56'>
+                <div className='flex gap-2 lg:mt-16 lg:ml-64'>
                     <p className='text-lg'>3. </p>   
                     <div>
                         <p className='text-lg'>Разработка навигации</p>
@@ -109,10 +109,11 @@ export default function sitemap() {
                 </div>
             </div>
             <div>
-                <img src={sitemap2} className="w-full" />
-                <div className="flex justify-end">
+                {/* <img src={sitemap2} className="w-full" /> */}
+                <iframe className='w-full' height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FmVP8FjJnautfI6mGChSp4H%2F%25D0%25BF%25D1%2580%25D0%25B8%25D0%25BC%25D0%25B5%25D1%2580-%25D0%25BA%25D0%25B0%25D1%2580%25D1%2582%25D1%258B-%25D1%2581%25D0%25B0%25D0%25B9%25D1%2582%25D0%25B0%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3Dko5SFsIvGgQFvfUl-1"></iframe>
+                {/* <div className="flex justify-end">
                     <span className="font-inter">Пример карты сайта для обучающей платформы.</span>
-                </div>
+                </div> */}
                 <div className="my-12 w-2/3">
                     <span className='font-inter text-xl'>Карта сайта — это важный инструмент для планирования и организации контента на сайте. Она помогает не только дизайнерам, но и пользователям лучше понять структуру сайта и найти нужную информацию.</span>
                 </div>

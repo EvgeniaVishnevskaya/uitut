@@ -3,7 +3,7 @@ import Card from "../ui/card"
 import { DButton } from "../ui/DButton"
 import { Link } from "react-router-dom"
 
-export default function page2() {
+export default function Docs() {
     // const [state, setState] = useState()
     
     return (<div className="flex flex-wrap gap-6 items-center">

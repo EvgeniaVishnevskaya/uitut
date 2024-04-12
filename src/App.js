@@ -18,9 +18,7 @@ function App({children}) {
   
   
   const mobileMenu = (currPath) => upperMenuItems.map(el=> {
-    return (
-   
-      
+    return ( 
       <div className={(el.route === currPath ? 'text-accent-blue bg-opacity-7 ': 'text-text-header ') + 'bg-background-container transition-colors duration-300 shadow-sm text-sm'} key={el.label}>
         <Link to={el.route} className='flex flex-col items-center justify-center h-full'>
           <HomeOutlined />
@@ -53,39 +51,53 @@ function App({children}) {
   
   return (
    <div className='flex flex-col min-h-[100vh]'>
-     <header className='h-[54px] w-full flex justify-center sm:justify-normal'>
-      <div className='py-4 px-[50px] sm:pr-24'>
+     <header className='h-[54px] w-full flex justify-center sm:justify-normal border-b'>
+      <div className='flex gap-6 py-4 px-[50px] sm:pr-24 items-center'>
+        <div onClick={()=> setMenu(!menu)}>
+          <svg width="32" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_d_135_9694)">
+          <rect x="0.5" y="0.5" width="31" height="31" rx="5.5" stroke="#2678FB" shapeRendering="crispEdges"/>
+          <path d="M14.375 14.9062H21.875C21.9438 14.9062 22 14.85 22 14.7812V13.9062C22 13.8375 21.9438 13.7812 21.875 13.7812H14.375C14.3063 13.7812 14.25 13.8375 14.25 13.9062V14.7812C14.25 14.85 14.3063 14.9062 14.375 14.9062ZM14.25 18.0938C14.25 18.1625 14.3063 18.2188 14.375 18.2188H21.875C21.9438 18.2188 22 18.1625 22 18.0938V17.2188C22 17.15 21.9438 17.0938 21.875 17.0938H14.375C14.3063 17.0938 14.25 17.15 14.25 17.2188V18.0938ZM22.125 10.5H9.875C9.80625 10.5 9.75 10.5562 9.75 10.625V11.5C9.75 11.5688 9.80625 11.625 9.875 11.625H22.125C22.1938 11.625 22.25 11.5688 22.25 11.5V10.625C22.25 10.5562 22.1938 10.5 22.125 10.5ZM22.125 20.375H9.875C9.80625 20.375 9.75 20.4312 9.75 20.5V21.375C9.75 21.4438 9.80625 21.5 9.875 21.5H22.125C22.1938 21.5 22.25 21.4438 22.25 21.375V20.5C22.25 20.4312 22.1938 20.375 22.125 20.375ZM9.80313 16.1078L12.2453 18.0312C12.3359 18.1031 12.4703 18.0391 12.4703 17.9234V14.0766C12.4703 13.9609 12.3375 13.8969 12.2453 13.9688L9.80313 15.8922C9.7867 15.905 9.77342 15.9213 9.76427 15.94C9.75513 15.9587 9.75038 15.9792 9.75038 16C9.75038 16.0208 9.75513 16.0413 9.76427 16.06C9.77342 16.0787 9.7867 16.095 9.80313 16.1078Z" fill="black"/>
+          </g>
+          <defs>
+          <filter id="filter0_d_135_9694" x="0" y="0" width="32" height="34" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+          <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+          <feOffset dy="2"/>
+          <feComposite in2="hardAlpha" operator="out"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.04 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_135_9694"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_135_9694" result="shape"/>
+          </filter>
+          </defs>
+          </svg>
+          </div>
         <Link to="/">{logo}</Link>
       </div>
-      <div className='hidden sm:flex '>
+      <div className='hidden sm:flex'>
         { upperMenu(location) }
       </div>
      </header>
-     <div className='flex flex-col w-full md:grid md:grid-cols-5 grow gap-4 border-t relative'>
-       <nav className={`bg-background-container ${!menu ? 'hidden' : 'block'} h-full z-30 lg:absolute top-0 left-0 flex-col gap-[8px] py-[4px] transition-all duration-300`}>
-        <div className="flex justify-end" onClick={e => setMenu(false)}><CloseOutlined /></div>
-        { Menu(location) }
-          
-       </nav>
-       <div className='px-4 sm:px-0 col-span-5 lg:col-span-5 flex flex-col gap-6 flex-grow'>
-        {/* <span className='text-base text-text-disable'>{breadcrumb()}</span> */}
-        <div>
-         <Breadcrumbs />
-        </div>
-        <div onClick={e => setMenu(true)}><UnorderedListOutlined /></div>
-        <main className='grow'>
-           <div>
-              {children()}
-           </div>
-          </main>  
-        <footer className='w-full justify-center flex py-6'>
-          <a href='https://uitut.ru' className='text-base'>uitut.ru</a>
-        </footer>
-         
-
+     <div className='flex flex-col grow max-w-[1280px] w-full mx-auto'>
+      <div className='flex flex-col md:grid md:grid-cols-5 grow gap-4'>
+        <nav className={`bg-background-container ${!menu ? 'hidden' : 'block'} h-full z-30 lg:absolute left-0 flex-col gap-[8px] py-[4px] transition-all duration-1000 pl-2`}>
+          <Menu />
+        </nav>
+        <div className='px-4 sm:px-0 col-span-5 lg:col-span-5 flex flex-col gap-6 flex-grow'>
+          {/* <span className='text-base text-text-disable'>{breadcrumb()}</span> */}
+          <div>
+          <Breadcrumbs />
+          </div>
+            <main className='grow'>
+              <div className='p-4'>
+                  {children}
+              </div>
+            </main>  
+            <footer className='w-full justify-center flex py-6'>
+              <a href='https://uitut.ru' className='text-base'>uitut.ru</a>
+            </footer>
          </div>
-        
-         
+       </div>
      </div>
     <div className='sticky bottom-0 bg-background-container border-t md:hidden h-16 grid grid-cols-3'>
         {mobileMenu(location)}

@@ -1,9 +1,10 @@
 
-import { Link } from 'react-router-dom'
+import { Link,  useLocation } from 'react-router-dom'
 import { MailOutlined, UpOutlined, DownOutlined } from "@ant-design/icons" 
 import { useState } from "react"
 
-export default function Menu(currPath) {
+export default function Menu() {
+    const currPath = useLocation()?.pathname
     const [opened, setOpened] = useState([
         {label: 'Главная', isOpen: false, isActive: true, route: '/'},
         {label: 'Уроки', isOpen: false, isActive: false, route: '/lessons', 
@@ -23,10 +24,10 @@ export default function Menu(currPath) {
       return opened?.map((el, i) => {
         if (el.children) 
         return (
-          <div key={el.label}>
-          <div className="flex gap-[8px] h-[40px] px-[24px] items-center cursor-pointer justify-between" >        
+          <div key={el.label} className={`border-l ${currPath === el.route? 'border-l-accent-blue text-accent-blue' :'border-l-main-disable text-text-header'} `}>
+          <div className={`flex gap-[8px] h-[40px] px-[24px] items-center cursor-pointer justify-between`} >        
           <Link to={el.route}>
-          <div className={ (currPath === el.route? 'text-accent-blue ' :'text-text-header ') +'flex gap-2 items-center'}>
+          <div className={'flex gap-2 items-center'}>
             <MailOutlined />
             <span className="text-base select-none" >{el.label}</span>
           </div>
@@ -37,7 +38,7 @@ export default function Menu(currPath) {
           { el.isOpen ?  el.children.map(child => {
             return (
             <Link to={child.route} key={child.label}>
-              <div className={ (currPath === child.route ? 'text-accent-blue ' :'text-text-header ') +"transition duration-300 flex gap-[8px] h-[40px] px-[24px] items-center "} > 
+              <div className={`border-l ${currPath === child.route? 'border-l-accent-blue text-accent-blue' :'border-l-main-disable text-text-header'} transition duration-300 flex gap-[8px] h-[40px] px-[24px] items-center`} > 
                 <span className="text-base">{child.label}</span>
               </div>
             </Link>
@@ -48,8 +49,8 @@ export default function Menu(currPath) {
         )
         else return (
           
-          <Link to={el.route} key={el.label}>
-            <div className={ (currPath === el.route? 'text-accent-blue ' :'text-text-header ') +"transition duration-300 flex gap-[8px] h-[40px] px-[24px] items-center"} >
+          <Link to={el.route} key={el.label} >
+            <div className={`border-l ${currPath === el.route? 'border-l-accent-blue text-accent-blue' :'border-l-main-disable text-text-header'} transition duration-300 flex gap-[8px] h-[40px] px-[24px] items-center`}>
                   
               <MailOutlined />
               <span className="text-base">{el.label}</span>

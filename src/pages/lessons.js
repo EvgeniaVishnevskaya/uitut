@@ -1,7 +1,7 @@
 import CardGenerate from "../ui/cardGenerate";
 
 
-export default function page1() {
+export default function Lessons() {
     const menus = [
         {
             categoryName: 'Процесс работы', 
@@ -26,7 +26,7 @@ export default function page1() {
                     type: 'card',
                     image: 'prototype',
                     header: 'Прототип',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/prototype',
                     description: 'Интерактивная модель, которая показывает функциональность и\u00A0дизайн сайта до\u00A0его реализации'
                 }    
             ]
