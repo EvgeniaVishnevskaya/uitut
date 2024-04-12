@@ -61,7 +61,7 @@ function App({children}) {
         { upperMenu(location) }
       </div>
      </header>
-     <div className='flex flex-col w-full md:grid md:grid-cols-5 grow gap-4 border-t items-center relative'>
+     <div className='flex flex-col w-full md:grid md:grid-cols-5 grow gap-4 border-t relative'>
        <nav className={`bg-background-container ${!menu ? 'hidden' : 'block'} h-full z-30 lg:absolute top-0 left-0 flex-col gap-[8px] py-[4px] transition-all duration-300`}>
         <div className="flex justify-end" onClick={e => setMenu(false)}><CloseOutlined /></div>
         { Menu(location) }
