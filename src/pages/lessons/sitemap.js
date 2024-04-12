@@ -124,8 +124,8 @@ export default function Sitemap() {
                     <Link to={'/lessons'}>
                         <DButton>Все уроки</DButton>
                     </Link>
-                    <Link>
-                        <DButton type="primary">Следующая глава</DButton>
+                    <Link to='/lessons/prototype'>
+                        <DButton type="primary" >Следующая глава</DButton>
                     </Link>
                 </div>
             </div>

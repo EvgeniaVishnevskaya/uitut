@@ -1,5 +1,5 @@
 import { HomeOutlined, UnorderedListOutlined, CloseOutlined } from '@ant-design/icons'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, useLocation  } from 'react-router-dom'
 import Breadcrumbs from './ui/breadcrumbs'
 
@@ -47,8 +47,9 @@ function App({children}) {
       <path d="M87.8708 0H110V5.2955H101.881V21.5264H95.99V5.2955H87.8708V0Z" fill="#2678FB"/>
     </svg>
   )
-  
-  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location])
   return (
    <div className='flex flex-col min-h-[100vh]'>
      <header className='h-[54px] w-full flex justify-center sm:justify-normal border-b'>

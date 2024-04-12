@@ -2,27 +2,18 @@
 import { Link,  useLocation } from 'react-router-dom'
 import { MailOutlined, UpOutlined, DownOutlined } from "@ant-design/icons" 
 import { useState } from "react"
+import { usePages } from '../pages'
 
 export default function Menu() {
     const currPath = useLocation()?.pathname
-    const [opened, setOpened] = useState([
-        {label: 'Главная', isOpen: false, isActive: true, route: '/'},
-        {label: 'Уроки', isOpen: false, isActive: false, route: '/lessons', 
-        children: [
-          {label: 'Карта сайта', isActive: true, route: '/lessons/sitemap'},
-          {label: 'Прототип', isActive: false, route: '/lessons/prototype'}
-        ]},
-        {label: 'Документация', isOpen: false, route: '/documentation' },
-        {label: 'Обратная связь', isOpen: false, route: '/contacts' }
-        
-        ])  
+    const [opened, setOpened] = useState(usePages('expandable', ['index']))  
       const open = (i) => {
         const arr = opened
         arr[i].isOpen = !arr[i].isOpen
         setOpened([...arr])  
       }
       return opened?.map((el, i) => {
-        if (el.children) 
+        if (el.children?.length) 
         return (
           <div key={el.label} className={`border-l ${currPath === el.route? 'border-l-accent-blue text-accent-blue' :'border-l-main-disable text-text-header'} `}>
           <div className={`flex gap-[8px] h-[40px] px-[24px] items-center cursor-pointer justify-between`} >        
