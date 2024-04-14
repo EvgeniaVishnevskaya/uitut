@@ -117,10 +117,10 @@ export default function Sitemap() {
                 <div className="my-12 w-2/3">
                     <span className='font-inter text-xl'>Карта сайта — это важный инструмент для планирования и организации контента на сайте. Она помогает не только дизайнерам, но и пользователям лучше понять структуру сайта и найти нужную информацию.</span>
                 </div>
-                <div className='flex justify-end gap-6'>
-                    <Link>
+                <div className='flex justify-end gap-6 flex-wrap'>
+                    
                         <DButton disabled>Предыдущая глава</DButton>
-                    </Link>
+        
                     <Link to={'/lessons'}>
                         <DButton>Все уроки</DButton>
                     </Link>

@@ -11,7 +11,7 @@ const routes = usePages()
 function createElement (component) {
   return (<App>{component}</App>)
 }
-
+console.log(routes)
 const router = createHashRouter(routes.map(route => ({
   path: route.route ,
   element: <App>{route.page}</App>

@@ -40,3 +40,7 @@ button:active:not(.text):not(.disabled) {
 button:active.text:not(.disabled) {
     @apply md:shadow-lg
 }
+.button-link {
+    @apply text-accent-blue underline
+}
+

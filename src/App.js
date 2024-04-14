@@ -1,7 +1,9 @@
 import { HomeOutlined, UnorderedListOutlined, CloseOutlined } from '@ant-design/icons'
 import { useState, useEffect } from 'react'
 import { Link, useLocation  } from 'react-router-dom'
+import { usePages } from './pages'
 import Breadcrumbs from './ui/breadcrumbs'
+import { DButton } from './ui/DButton'
 
 import Menu from './ui/menu'
 
@@ -10,12 +12,8 @@ import Menu from './ui/menu'
 function App({children}) {
   const [menu, setMenu] = useState(false)
   const location = useLocation()?.pathname
-  const upperMenuItems = [
-    {label: 'Уроки', isActive: true, route: '/lessons'},
-    {label: 'Документация', isActive: false, route: '/documentation'},
-    {label: 'Контакты', isActive: false, route: '/contacts'}
-  ]
-  
+  const upperMenuItems = usePages('expandable')
+  console.log(upperMenuItems)
   
   const mobileMenu = (currPath) => upperMenuItems.map(el=> {
     return ( 
@@ -81,7 +79,7 @@ function App({children}) {
      </header>
      <div className='flex flex-col grow max-w-[1280px] w-full mx-auto'>
       <div className='flex flex-col md:grid md:grid-cols-5 grow gap-4'>
-        <nav className={`bg-background-container ${!menu ? 'hidden' : 'block'} h-full z-30 lg:absolute left-0 flex-col gap-[8px] py-[4px] transition-all duration-1000 pl-2`}>
+        <nav className={`bg-background-container ${!menu ? 'hidden' : 'block'} h-full z-30 lg:absolute left-0 flex-col gap-[8px] py-[4px] transition-all duration-1000 pl-2 w-[400px]`}>
           <Menu />
         </nav>
         <div className='px-4 sm:px-0 col-span-5 lg:col-span-5 flex flex-col gap-6 flex-grow'>
@@ -94,12 +92,19 @@ function App({children}) {
                   {children}
               </div>
             </main>  
-            <footer className='w-full justify-center flex py-6'>
-              <a href='https://uitut.ru' className='text-base'>uitut.ru</a>
-            </footer>
          </div>
        </div>
      </div>
+     <footer className='w-full justify-center flex px-[50px] pt-6 pb-12 gap-6 items-center border-t flex-wrap lg:flex-nowrap'>
+              <Link to="/">{logo}</Link>
+              <div className='grow'>
+                <p className="font-inter text-sm pr-0 max-w-[700px]">Проект, который познакомит тебя с основами дизайна пользовательского интерфейса. Создан в рамках дипломной работы на программе «Дизайн и программирование» в Школе дизайна НИУ ВШЭ</p> 
+              </div>
+              <div className='font-inter text-sm min-w-64'>
+                <p>Сделала студентка <DButton type="link" href="https://hz.kuda">Вишневская Евгения</DButton></p>
+                <p>под кураторством <DButton type="link" href="https://hz.kuda">Захара Дня</DButton></p>
+              </div> 
+            </footer> 
     <div className='sticky bottom-0 bg-background-container border-t md:hidden h-16 grid grid-cols-3'>
         {mobileMenu(location)}
     </div>
