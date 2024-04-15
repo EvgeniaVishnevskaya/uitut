@@ -8,14 +8,13 @@ export default function Breadcrumbs() {
     const dict = Object.fromEntries(usePages('breadcrumbs'))
 
     return items.length ? (
-        <div className="flex items-center h-8">
-            <span className="flex items-center">
-            <Link to='/'><HomeOutlined/></Link>
+        <div className="flex items-center h-8 my-4">
+            <span>
+            {/* <Link to='/'><HomeOutlined/></Link> */}
             { items?.map(e=> {
                 return (
                     <Link to={dict[e].route} key={e}><span className="ml-1 last:text-accent-blue before:content-['_/_']">{dict[e].title}</span></Link>
                 )
-           
             })}</span>
             
         </div>

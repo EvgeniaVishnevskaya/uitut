@@ -43,14 +43,14 @@ export default function Lessons() {
                     type: 'card',
                     image: 'adaptive',
                     header: 'Адаптивная вёрстка',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/adaptive',
                     description: 'Создание нескольких версий сайта для разных типов устройств'
                 } ,
                 {
                     type: 'card',
                     image: 'responsive',
                     header: 'Респонсив дизайн',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/responsive',
                     description: 'Создание гибких макетов для изменения внешнего вида сайта в\u00A0зависимости от\u00A0размера экрана'
                 }, 
                 {
@@ -76,7 +76,7 @@ export default function Lessons() {
                     type: 'card',
                     image: 'system',
                     header: 'Система',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/system',
                     description: 'Что такое пространственная система?'
                 } ,
                 {

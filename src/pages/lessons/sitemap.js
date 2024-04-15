@@ -55,7 +55,6 @@ export default function Sitemap() {
                 </div>
             </div>
             <div className='h-full w-full grad-bg rounded-2xl bg-cover'>
-                
                 <p className='text-background-container text-3xl p-12 z-20'>Карта сайта — это диаграмма или схема, которая отображает структуру веб-сайта или цифрового продукта. Она показывает, как между собой связаны различные страницы и разделы, и как пользователи могут перемещаться между ними.</p>
             </div>
             <div className='flex flex-col gap-12 lg:block lg:relative bg-background-pink-300 rounded-xl p-16'>

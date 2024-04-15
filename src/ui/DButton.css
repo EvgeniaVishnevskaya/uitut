@@ -21,7 +21,7 @@ button.large {
 button.small {
     @apply py-0 px-1.5
 }
-button:hover:not(.disabled) {
+button:hover:not(.disabled):not(.selected) {
     @apply md:opacity-70     
 }
 button:not(.primary):not(.disabled):hover {
@@ -34,13 +34,17 @@ button.text {
 button.text:hover:not(.disabled) {
     @apply md:bg-gray-100 md:rounded-md
 }
-button:active:not(.text):not(.disabled) {
+button:active:not(.text):not(.disabled):not(.selected) {
     @apply shadow-md
 }
-button:active.text:not(.disabled) {
+button:active.text:not(.disabled):not(.selected) {
     @apply md:shadow-lg
 }
 .button-link {
     @apply text-accent-blue underline
+}
+
+button.selected:not(.disabled) {
+    @apply text-accent-blue cursor-not-allowed border border-accent-blue rounded-md
 }
 

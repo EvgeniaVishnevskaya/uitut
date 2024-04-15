@@ -1,10 +1,13 @@
 
 import Index from "./pages/index"
 import Contacts from "./pages/contacts"
-import Docs from "./pages/docs"
+// import Docs from "./pages/docs"
 import Lessons from "./pages/lessons"
 import Prototype from "./pages/lessons/prototype"
 import Sitemap from "./pages/lessons/sitemap"
+import System from "./pages/lessons/system"
+import Responsive from "./pages/lessons/responsive"
+import Adaptive from "./pages/lessons/adaptive"
 
 const collection = [
     {
@@ -46,14 +49,14 @@ const collection = [
                         name: 'adaptive',
                         route: 'adaptive',
                         title: 'Адаптивная верстка',
-                        component: <Sitemap />,
+                        component: <Adaptive />,
                         children: []        
                     },
                     {
                         name: 'responsive',
                         route: 'responsive',
                         title: 'Респонзив дизайн',
-                        component: <Prototype />,
+                        component: <Responsive />,
                         children: []        
                     }
                 ]      
@@ -65,7 +68,7 @@ const collection = [
                         name: 'system',
                         route: 'system',
                         title: 'Что такое пространственная система?',
-                        component: <Sitemap />,
+                        component: <System />,
                         children: []        
                     },
                     {

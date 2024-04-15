@@ -1,4 +1,4 @@
-import { HomeOutlined, UnorderedListOutlined, CloseOutlined } from '@ant-design/icons'
+import { HomeOutlined } from '@ant-design/icons'
 import { useState, useEffect } from 'react'
 import { Link, useLocation  } from 'react-router-dom'
 import { usePages } from './pages'
@@ -13,7 +13,6 @@ function App({children}) {
   const [menu, setMenu] = useState(false)
   const location = useLocation()?.pathname
   const upperMenuItems = usePages('expandable')
-  console.log(upperMenuItems)
   
   const mobileMenu = (currPath) => upperMenuItems.map(el=> {
     return ( 
