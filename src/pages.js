@@ -8,6 +8,8 @@ import Sitemap from "./pages/lessons/sitemap"
 import System from "./pages/lessons/system"
 import Responsive from "./pages/lessons/responsive"
 import Adaptive from "./pages/lessons/adaptive"
+import Basics from "./pages/lessons/basics"
+import Borders from "./pages/lessons/borders"
 
 const collection = [
     {
@@ -75,14 +77,14 @@ const collection = [
                         name: 'basics',
                         route: 'basics',
                         title: 'Основы пространственной системы',
-                        component: <Prototype />,
+                        component: <Basics />,
                         children: []        
                     },
                     {
                         name: 'border',
                         route: 'border',
                         title: 'Контуры элементов',
-                        component: <Prototype />,
+                        component: <Borders />,
                         children: []        
                     },
                     {
