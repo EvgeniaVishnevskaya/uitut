@@ -220,13 +220,13 @@ export default function Borders() {
         </div>
         <div className='flex justify-between gap-6 flex-wrap'>
             <Link to='/lessons/basics'>
-                <DButton>Предыдущая глава</DButton>
+                <DButton size="large">Предыдущая глава</DButton>
             </Link>
             <Link to={'/lessons'}>
-                <DButton>Все уроки</DButton>
+                <DButton size="large">Все уроки</DButton>
             </Link>
-            <Link to='/lessons/'>
-                <DButton type="primary">Следующая глава</DButton>
+            <Link to='/lessons/grid'>
+                <DButton size="large" type="primary">Следующая глава</DButton>
             </Link>
         </div>
         </div>

@@ -61,13 +61,13 @@ export default function System() {
             </div>
             <div className='flex justify-end gap-6 flex-wrap'>
                     <Link to='/lessons/responsive'>
-                        <DButton>Предыдущая глава</DButton>
+                        <DButton size="large">Предыдущая глава</DButton>
                     </Link>
                     <Link to={'/lessons'}>
-                        <DButton>Все уроки</DButton>
+                        <DButton size="large">Все уроки</DButton>
                     </Link>
-                    <Link to='/lessons/'>
-                        <DButton type="primary">Следующая глава</DButton>
+                    <Link to='/lessons/basics'>
+                        <DButton size="large" type="primary">Следующая глава</DButton>
                     </Link>
                 </div>
         </div>

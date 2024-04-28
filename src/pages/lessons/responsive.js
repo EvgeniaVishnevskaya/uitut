@@ -68,13 +68,13 @@ export default function Responsive() {
             <p className="text-lg font-inter w-full lg:w-3/4">Респонсив-дизайн не на всех сайтах будет смотреться хорошо. Например, когда в шапке сайта размещено зацикленное видео или громоздкий поиск с большим количеством фильтров. Программный модуль просто сожмёт элементы и создаст неудобства у посетителя.</p>
             <div className='flex justify-end gap-6 flex-wrap'>
                     <Link to='/lessons/adaptive'>
-                        <DButton>Предыдущая глава</DButton>
+                        <DButton size="large">Предыдущая глава</DButton>
                     </Link>
                     <Link to={'/lessons'}>
-                        <DButton>Все уроки</DButton>
+                        <DButton size="large">Все уроки</DButton>
                     </Link>
                     <Link to='/lessons/system'>
-                        <DButton type="primary">Следующая глава</DButton>
+                        <DButton size="large" type="primary">Следующая глава</DButton>
                     </Link>
                 </div>
         </div>

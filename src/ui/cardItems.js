@@ -13,7 +13,17 @@ export default function GetImage({name}) {
         <path d="M79 42.5C78.1716 42.5 77.5 43.1716 77.5 44C77.5 44.8284 78.1716 45.5 79 45.5L79 42.5ZM117.061 45.0607C117.646 44.4749 117.646 43.5251 117.061 42.9393L107.515 33.3934C106.929 32.8076 105.979 32.8076 105.393 33.3934C104.808 33.9792 104.808 34.9289 105.393 35.5147L113.879 44L105.393 52.4853C104.808 53.0711 104.808 54.0208 105.393 54.6066C105.979 55.1924 106.929 55.1924 107.515 54.6066L117.061 45.0607ZM79 45.5L116 45.5L116 42.5L79 42.5L79 45.5Z" fill="#F2018B"/>
         </svg>
         ),
-        prototype: (''),
+        prototype: (<svg width="194" height="86" viewBox="0 0 194 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="194" height="15" rx="7.5" fill="#FFE3F4"/>
+        <rect y="23.5" width="58" height="14" rx="7" fill="#FFE3F4"/>
+        <rect x="66" y="23.5" width="94" height="14" rx="7" fill="#FFE3F4"/>
+        <rect x="168" y="23.5" width="26" height="14" rx="7" fill="#FFE3F4"/>
+        <rect y="46" width="194" height="4" rx="2" fill="#FFE3F4"/>
+        <rect y="58" width="194" height="4" rx="2" fill="#FFE3F4"/>
+        <rect y="70" width="145" height="4" rx="2" fill="#FFE3F4"/>
+        <rect y="82" width="45" height="4" rx="2" fill="#FFE3F4"/>
+        </svg>
+        ),
         adaptive: (<svg width="194" height="76" viewBox="0 0 194 76" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect y="0.5" width="144" height="75" rx="4" fill="#E5EFFF"/>
         <rect x="160" y="12.5" width="34" height="63" rx="4" fill="#E5EFFF"/>
@@ -21,13 +31,12 @@ export default function GetImage({name}) {
         <path d="M0 4C0 1.79086 1.79086 0 4 0H140C142.209 0 144 1.79086 144 4V6H0V4Z" fill="#2678FB"/>
         </svg>
         ),
-        responsive: (<svg width="242" height="134" viewBox="0 0 242 134" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 6C0 2.68629 2.68629 0 6 0H236C239.314 0 242 2.68629 242 6V134H0V6Z" fill="#C2D9FD"/>
-        <rect x="24" y="24" width="28.335" height="86" rx="4" fill="#E5EFFF"/>
-        <rect x="62.335" y="24" width="28.335" height="86" rx="4" fill="#E5EFFF"/>
-        <rect x="100.67" y="24" width="117.33" height="86" rx="4" fill="#E5EFFF"/>
-        <path d="M177.5 106C177.5 106.828 178.172 107.5 179 107.5L192.5 107.5C193.328 107.5 194 106.828 194 106C194 105.172 193.328 104.5 192.5 104.5L180.5 104.5L180.5 92.5C180.5 91.6716 179.828 91 179 91C178.172 91 177.5 91.6716 177.5 92.5L177.5 106ZM212.5 74C212.5 73.1716 211.828 72.5 211 72.5L197.5 72.5C196.672 72.5 196 73.1716 196 74C196 74.8284 196.672 75.5 197.5 75.5L209.5 75.5L209.5 87.5C209.5 88.3284 210.172 89 211 89C211.828 89 212.5 88.3284 212.5 87.5L212.5 74ZM180.061 107.061L212.061 75.0607L209.939 72.9393L177.939 104.939L180.061 107.061Z" fill="#2678FB"/>
-        </svg>
+        responsive: (<svg width="194" height="86" viewBox="0 0 194 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="28.335" height="86" rx="4" fill="#E5EFFF"/>
+        <rect x="38.335" width="28.335" height="86" rx="4" fill="#E5EFFF"/>
+        <rect x="76.67" width="117.33" height="86" rx="4" fill="#E5EFFF"/>
+        <path d="M153.5 82C153.5 82.8284 154.172 83.5 155 83.5L168.5 83.5C169.328 83.5 170 82.8284 170 82C170 81.1716 169.328 80.5 168.5 80.5L156.5 80.5L156.5 68.5C156.5 67.6716 155.828 67 155 67C154.172 67 153.5 67.6716 153.5 68.5L153.5 82ZM188.5 50C188.5 49.1716 187.828 48.5 187 48.5L173.5 48.5C172.672 48.5 172 49.1716 172 50C172 50.8284 172.672 51.5 173.5 51.5L185.5 51.5L185.5 63.5C185.5 64.3284 186.172 65 187 65C187.828 65 188.5 64.3284 188.5 63.5L188.5 50ZM156.061 83.0607L188.061 51.0607L185.939 48.9393L153.939 80.9393L156.061 83.0607Z" fill="#2678FB"/>
+        </svg>        
         ),
         basics: (<svg width="190" height="86" viewBox="0 0 190 86" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="1" width="20" height="86" rx="4" fill="#FFE7D8"/>
@@ -57,52 +66,51 @@ export default function GetImage({name}) {
         <path d="M171.512 73L171.512 79" stroke="#F76507" strokeWidth="3"/>
         </svg>
         ),
-        grid: (<svg width="242" height="134" viewBox="0 0 242 134" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 6C0 2.68629 2.68629 0 6 0H236C239.314 0 242 2.68629 242 6V134H0V6Z" fill="#FDAE7B"/>
-        <rect x="24" y="24" width="194" height="15.5" rx="4" fill="#FFE7D8"/>
-        <rect x="24" y="47.5" width="93" height="15.5" rx="4" fill="#FFE7D8"/>
-        <rect x="125" y="47.5" width="93" height="15.5" rx="4" fill="#FFE7D8"/>
-        <rect x="24" y="71" width="42.5" height="15.5" rx="4" fill="#FFE7D8"/>
-        <rect x="74.5" y="71" width="42.5" height="15.5" rx="4" fill="#FFE7D8"/>
-        <rect x="125" y="71" width="42.5" height="15.5" rx="4" fill="#FFE7D8"/>
-        <rect x="175.5" y="71" width="42.5" height="15.5" rx="4" fill="#FFE7D8"/>
-        <rect x="24" y="94.5" width="17.25" height="15.5" rx="4" fill="#FFE7D8"/>
-        <rect x="49.25" y="94.5" width="17.25" height="15.5" rx="4" fill="#FFE7D8"/>
-        <rect x="74.5" y="94.5" width="17.25" height="15.5" rx="4" fill="#FFE7D8"/>
-        <rect x="99.75" y="94.5" width="17.25" height="15.5" rx="4" fill="#FFE7D8"/>
-        <rect x="125" y="94.5" width="17.25" height="15.5" rx="4" fill="#FFE7D8"/>
-        <rect x="150.25" y="94.5" width="17.25" height="15.5" rx="4" fill="#FFE7D8"/>
-        <rect x="175.5" y="94.5" width="17.25" height="15.5" rx="4" fill="#F76507"/>
-        <rect x="200.75" y="94.5" width="17.25" height="15.5" rx="4" fill="#FFE7D8"/>
+        grid: (<svg width="194" height="86" viewBox="0 0 194 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="194" height="15.5" rx="4" fill="#FFE7D8"/>
+        <rect y="23.5" width="93" height="15.5" rx="4" fill="#FFE7D8"/>
+        <rect x="101" y="23.5" width="93" height="15.5" rx="4" fill="#FFE7D8"/>
+        <rect y="47" width="42.5" height="15.5" rx="4" fill="#FFE7D8"/>
+        <rect x="50.5" y="47" width="42.5" height="15.5" rx="4" fill="#FFE7D8"/>
+        <rect x="101" y="47" width="42.5" height="15.5" rx="4" fill="#FFE7D8"/>
+        <rect x="151.5" y="47" width="42.5" height="15.5" rx="4" fill="#FFE7D8"/>
+        <rect y="70.5" width="17.25" height="15.5" rx="4" fill="#FFE7D8"/>
+        <rect x="25.25" y="70.5" width="17.25" height="15.5" rx="4" fill="#FFE7D8"/>
+        <rect x="50.5" y="70.5" width="17.25" height="15.5" rx="4" fill="#FFE7D8"/>
+        <rect x="75.75" y="70.5" width="17.25" height="15.5" rx="4" fill="#FFE7D8"/>
+        <rect x="101" y="70.5" width="17.25" height="15.5" rx="4" fill="#FFE7D8"/>
+        <rect x="126.25" y="70.5" width="17.25" height="15.5" rx="4" fill="#FFE7D8"/>
+        <rect x="151.5" y="70.5" width="17.25" height="15.5" rx="4" fill="#F76507"/>
+        <rect x="176.75" y="70.5" width="17.25" height="15.5" rx="4" fill="#FFE7D8"/>
         </svg>
+        
         ),
-        layout: (<svg width="242" height="134" viewBox="0 0 242 134" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 6C0 2.68629 2.68629 0 6 0H236C239.314 0 242 2.68629 242 6V134H0V6Z" fill="#FDAE7B"/>
-        <rect x="24" y="24" width="67" height="7" rx="3.5" fill="#F76507"/>
-        <rect x="149" y="24" width="32.5" height="7" rx="3.5" fill="#FFE7D8"/>
-        <rect x="185.5" y="24" width="32.5" height="7" rx="3.5" fill="#FFE7D8"/>
-        <rect x="25" y="35" width="192" height="28" rx="4" fill="#FFE7D8"/>
-        <rect x="24" y="67" width="95" height="43" rx="4" fill="#FFE7D8"/>
-        <rect x="123" y="67" width="95" height="10" rx="4" fill="#FFE7D8"/>
-        <rect x="123" y="81" width="95" height="10" rx="4" fill="#FFE7D8"/>
-        <rect x="123" y="95" width="20.75" height="15" rx="4" fill="#FFE7D8"/>
-        <rect x="147.75" y="95" width="20.75" height="15" rx="4" fill="#FFE7D8"/>
-        <rect x="172.5" y="95" width="20.75" height="15" rx="4" fill="#FFE7D8"/>
-        <rect x="197.25" y="95" width="20.75" height="15" rx="4" fill="#FFE7D8"/>
+        layout: (<svg width="194" height="86" viewBox="0 0 194 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="67" height="7" rx="3.5" fill="#F76507"/>
+        <rect x="125" width="32.5" height="7" rx="3.5" fill="#FFE7D8"/>
+        <rect x="161.5" width="32.5" height="7" rx="3.5" fill="#FFE7D8"/>
+        <rect x="1" y="11" width="192" height="28" rx="4" fill="#FFE7D8"/>
+        <rect y="43" width="95" height="43" rx="4" fill="#FFE7D8"/>
+        <rect x="99" y="43" width="95" height="10" rx="4" fill="#FFE7D8"/>
+        <rect x="99" y="57" width="95" height="10" rx="4" fill="#FFE7D8"/>
+        <rect x="99" y="71" width="20.75" height="15" rx="4" fill="#FFE7D8"/>
+        <rect x="123.75" y="71" width="20.75" height="15" rx="4" fill="#FFE7D8"/>
+        <rect x="148.5" y="71" width="20.75" height="15" rx="4" fill="#FFE7D8"/>
+        <rect x="173.25" y="71" width="20.75" height="15" rx="4" fill="#FFE7D8"/>
         </svg>
+        
         ),
-        system: (<svg width="242" height="134" viewBox="0 0 242 134" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 6C0 2.68629 2.68629 0 6 0H236C239.314 0 242 2.68629 242 6V134H0V6Z" fill="#FDAE7B"/>
-        <rect x="24" y="24" width="42.5" height="39" rx="4" fill="#FFE7D8"/>
-        <rect x="74.5" y="24" width="42.5" height="39" rx="4" fill="#FFE7D8"/>
-        <rect x="125" y="24" width="42.5" height="39" rx="4" fill="#FFE7D8"/>
-        <rect x="175.5" y="24" width="42.5" height="39" rx="4" fill="#FFE7D8"/>
-        <rect x="24" y="71" width="42.5" height="39" rx="4" fill="#FFE7D8"/>
-        <rect x="74.5" y="71" width="42.5" height="39" rx="4" fill="#FFE7D8"/>
-        <rect x="125" y="71" width="42.5" height="39" rx="4" fill="#F76507"/>
-        <rect x="175.5" y="71" width="42.5" height="39" rx="4" fill="#FFE7D8"/>
+        system: (<svg width="194" height="86" viewBox="0 0 194 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="42.5" height="39" rx="4" fill="#FFE7D8"/>
+        <rect x="50.5" width="42.5" height="39" rx="4" fill="#FFE7D8"/>
+        <rect x="101" width="42.5" height="39" rx="4" fill="#FFE7D8"/>
+        <rect x="151.5" width="42.5" height="39" rx="4" fill="#FFE7D8"/>
+        <rect y="47" width="42.5" height="39" rx="4" fill="#FFE7D8"/>
+        <rect x="50.5" y="47" width="42.5" height="39" rx="4" fill="#FFE7D8"/>
+        <rect x="101" y="47" width="42.5" height="39" rx="4" fill="#F76507"/>
+        <rect x="151.5" y="47" width="42.5" height="39" rx="4" fill="#FFE7D8"/>
         </svg>
-        ),
+         ),
         menu: (<svg width="194" height="88" viewBox="0 0 194 88" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="194" height="86" rx="6" fill="#FAFBFF"/>
         <rect x="4" y="4" width="186" height="40" rx="4" fill="#FFE3F4"/>
@@ -175,6 +183,12 @@ export default function GetImage({name}) {
         <rect x="122" y="35" width="16" height="16" rx="4" fill="#FFA9DA"/>
         <rect x="142" y="35" width="16" height="16" rx="4" fill="#FFA9DA"/>
         <rect x="162" y="35" width="16" height="16" rx="4" fill="#FFA9DA"/>
+        </svg>
+        ),
+        back: (<svg width="194" height="84" viewBox="0 0 194 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.75" width="194" height="82.5" rx="6" fill="#FFE3F4"/>
+            <path d="M109.198 32.8407L97.8349 17.1754C97.4224 16.6082 96.5781 16.6082 96.1688 17.1754L84.8025 32.8407C84.7745 32.8792 84.7578 32.9248 84.7541 32.9722C84.7504 33.0197 84.7599 33.0673 84.7816 33.1096C84.8033 33.152 84.8363 33.1876 84.877 33.2124C84.9176 33.2371 84.9643 33.2502 85.012 33.25H87.4289C87.5933 33.25 87.748 33.1694 87.8447 33.0373L97.0002 20.4174L106.156 33.0373C106.252 33.1694 106.407 33.25 106.572 33.25H108.989C109.198 33.25 109.32 33.0115 109.198 32.8407Z" fill="#F2018B"/>
+            <path d="M57.9448 53.658V46.75H60.8488V63.25H57.9448V56.21H47.4288V63.25H44.5248V46.75H47.4288V53.658H57.9448ZM82.3242 63.25H79.2222L77.4512 59.466H67.7272L65.9562 63.25H62.8542L70.7742 46.75H74.4042L82.3242 63.25ZM72.5892 49.049L68.8492 57.068H76.3292L72.5892 49.049ZM96.4463 54.604C97.715 54.8533 98.6646 55.3447 99.2953 56.078C99.926 56.804 100.241 57.6913 100.241 58.74C100.241 59.6273 100.032 60.412 99.6143 61.094C99.1963 61.7687 98.573 62.2967 97.7443 62.678C96.923 63.0593 95.9293 63.25 94.7633 63.25H83.7633L85.0613 54.78L83.7633 46.75H94.3673C95.3793 46.75 96.241 46.9113 96.9523 47.234C97.671 47.5493 98.2136 48.0077 98.5803 48.609C98.9543 49.2103 99.1413 49.9253 99.1413 50.754C99.1413 51.5753 98.9213 52.3307 98.4813 53.02C98.0413 53.7093 97.363 54.2373 96.4463 54.604ZM96.2153 51.15C96.2153 50.5267 95.9953 50.028 95.5553 49.654C95.1226 49.2727 94.514 49.082 93.7293 49.082H86.9313L87.6793 53.658H93.5093C94.0373 53.658 94.503 53.559 94.9063 53.361C95.317 53.163 95.636 52.877 95.8633 52.503C96.098 52.1217 96.2153 51.6707 96.2153 51.15ZM94.4333 60.918C95.3426 60.918 96.0503 60.709 96.5563 60.291C97.0623 59.873 97.3153 59.2753 97.3153 58.498C97.3153 57.6767 97.0146 57.0387 96.4133 56.584C95.812 56.1293 94.9393 55.902 93.7953 55.902H87.6793L86.9203 60.918H94.4333ZM106.339 56.21L105.613 60.742H116.778V63.25H102.39L103.71 55L102.39 46.75H116.668V49.258H105.613L106.339 53.79H116.14V56.21H106.339ZM128.54 46.75C129.75 46.75 130.81 46.97 131.719 47.41C132.628 47.85 133.329 48.466 133.82 49.258C134.319 50.0427 134.568 50.9447 134.568 51.964C134.568 52.9833 134.319 53.889 133.82 54.681C133.329 55.4657 132.628 56.078 131.719 56.518C130.81 56.958 129.75 57.178 128.54 57.178H122.71V63.25H119.806V46.75H128.54ZM128.43 54.67C129.083 54.67 129.647 54.56 130.124 54.34C130.608 54.12 130.978 53.8083 131.235 53.405C131.492 52.9943 131.62 52.514 131.62 51.964C131.62 51.414 131.492 50.9373 131.235 50.534C130.978 50.1233 130.608 49.808 130.124 49.588C129.647 49.368 129.083 49.258 128.43 49.258H122.71V54.67H128.43ZM144.438 54.648L151.456 63.25H147.87L142.568 56.573L137.244 63.25H133.746L140.819 54.648L134.296 46.75H137.904L142.678 52.723L147.408 46.75H150.906L144.438 54.648Z" fill="#F2018B"/>
         </svg>
         ),
         404: (<svg width="192" height="22" viewBox="0 0 192 22" fill="none" xmlns="http://www.w3.org/2000/svg">

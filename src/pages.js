@@ -10,6 +10,16 @@ import Responsive from "./pages/lessons/responsive"
 import Adaptive from "./pages/lessons/adaptive"
 import Basics from "./pages/lessons/basics"
 import Borders from "./pages/lessons/borders"
+import Grid from "./pages/lessons/grid"
+import Layout from "./pages/lessons/layout"
+import Menu from "./pages/lessons/menu"
+import Logo from "./pages/lessons/logo"
+import Icons from "./pages/lessons/icons"
+import Links from "./pages/lessons/links"
+import NotFound from "./pages/lessons/404"
+import Footer from "./pages/lessons/footer"
+import Breadcrumbs from "./pages/lessons/breadcrumbs"
+import Back from "./pages/lessons/back"
 
 const collection = [
     {
@@ -83,7 +93,7 @@ const collection = [
                     {
                         name: 'border',
                         route: 'border',
-                        title: 'Контуры элементов',
+                        title: 'Применение',
                         component: <Borders />,
                         children: []        
                     },
@@ -91,14 +101,14 @@ const collection = [
                         name: 'grid',
                         route: 'grid',
                         title: 'Сетка',
-                        component: <Prototype />,
+                        component: <Grid />,
                         children: []        
                     },
                     {
                         name: 'layout',
                         route: 'layout',
                         title: 'Макеты',
-                        component: <Prototype />,
+                        component: <Layout />,
                         children: []        
                     }
                 ]      
@@ -110,49 +120,56 @@ const collection = [
                         name: 'menu',
                         route: 'menu',
                         title: 'Меню',
-                        component: <Sitemap />,
+                        component: <Menu />,
                         children: []        
                     },
                     {
                         name: 'logo',
                         route: 'logo',
                         title: 'Логотип',
-                        component: <Prototype />,
+                        component: <Logo />,
                         children: []        
                     },
                     {
                         name: 'icons',
                         route: 'icons',
                         title: 'Иконки',
-                        component: <Prototype />,
+                        component: <Icons />,
                         children: []        
                     },
                     {
                         name: 'links',
                         route: 'links',
                         title: 'Ссылки',
-                        component: <Prototype />,
+                        component: <Links />,
                         children: []        
                     },
                     {
                         name: 'breadcrumbs',
                         route: 'breadcrumbs',
                         title: 'Хлебные крошки',
-                        component: <Prototype />,
+                        component: <Breadcrumbs />,
                         children: []        
                     },
                     {
                         name: 'footer',
                         route: 'footer',
                         title: 'Футтер',
-                        component: <Prototype />,
+                        component: <Footer />,
+                        children: []        
+                    },
+                    {
+                        name: 'back',
+                        route: 'back',
+                        title: 'Кнопка возврата',
+                        component: <Back />,
                         children: []        
                     },
                     {
                         name: '404',
                         route: '404',
                         title: '404',
-                        component: <Prototype />,
+                        component: <NotFound />,
                         children: []        
                     }
                 ]      

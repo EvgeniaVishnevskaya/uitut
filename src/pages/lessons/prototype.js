@@ -85,10 +85,10 @@ export default function Prototype() {
                     <p className='font-inter mb-12 text-lg w-full lg:w-1/2'>Создание прототипа — этап в разработке веб-сайта, который помогает сэкономить время и ресурсы, предотвращая возможные ошибки на стадии разработки.</p>
                     <div className='flex justify-end gap-6 flex-wrap'>
                     <Link to='/lessons/sitemap'>
-                        <DButton>Предыдущая глава</DButton>
+                        <DButton size="large">Предыдущая глава</DButton>
                     </Link>
                     <Link to={'/lessons'}>
-                        <DButton>Все уроки</DButton>
+                        <DButton size="large">Все уроки</DButton>
                     </Link>
                     <Link to='/lessons/adaptive'>
                         <DButton type="primary" >Следующая глава</DButton>

@@ -104,13 +104,13 @@ export default function Basics () {
         </div>
         <div className='flex justify-between gap-6 flex-wrap'>
             <Link to='/lessons/system'>
-                <DButton>Предыдущая глава</DButton>
+                <DButton size="large">Предыдущая глава</DButton>
             </Link>
             <Link to={'/lessons'}>
-                <DButton>Все уроки</DButton>
+                <DButton size="large">Все уроки</DButton>
             </Link>
-            <Link to='/lessons/'>
-                <DButton type="primary">Следующая глава</DButton>
+            <Link to='/lessons/border'>
+                <DButton size="large" type="primary">Следующая глава</DButton>
             </Link>
         </div>
     </div>

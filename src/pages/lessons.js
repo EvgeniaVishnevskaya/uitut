@@ -83,29 +83,29 @@ export default function Lessons() {
                     type: 'card',
                     image: 'basics',
                     header: 'Основы построения',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/basics',
                     description: 'Правила размеров и\u00A0интервалов'
                 }, 
                 
                 {
                     type: 'card',
                     image: 'borders',
-                    header: 'Контуры элементов',
-                    link:  '/lessons/sitemap',
-                    description: 'Разберёмся с\u00A0границами элементров в\u00A0сравнении с\u00A0браузерной вёрсткой'
+                    header: 'Применение',
+                    link:  '/lessons/border',
+                    description: 'Применение пространственного масштаба\u00A0к элементам интерфейса'
                 },
                 {
                     type: 'card',
                     image: 'grid',
                     header: 'Сетка',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/grid',
                     description: 'Наведение порядка в\u00A0макете при помощи пространственной сетки'
                 },
                 {
                     type: 'card',
                     image: 'layout',
                     header: 'Макеты',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/layput',
                     description: 'Комбинация макета в\u00A0одну пространственную композицию'
                 },
                 
@@ -125,14 +125,14 @@ export default function Lessons() {
                     type: 'card',
                     image: 'menu',
                     header: 'Меню',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/menu',
                     description: 'Главный элемент при создании навигации'
                 } ,
                 {
                     type: 'card',
                     image: 'logo',
                     header: 'Логотип',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/logo',
                     description: 'Привычный для пользователя паттерн\u00A0— добавление в\u00A0логотип ссылки на\u00A0главную страницу ресурса'
                 }, 
                 {
@@ -144,35 +144,42 @@ export default function Lessons() {
                     type: 'card',
                     image: 'icons',
                     header: 'Иконки',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/icons',
                     description: 'Используются для упрощения восприятия клиентом информации'
                 },
                 {
                     type: 'card',
                     image: 'links',
                     header: 'Ссылки',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/links',
                     description: 'Элемент навигации для быстрого перехода к\u00A0необходимому контенту'
                 },
                 {
                     type: 'card',
                     image: 'breadcrumbs',
                     header: 'Хлебные крошки',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/breadcrumbs',
                     description: 'Показывает путь от\u00A0главной страницы до\u00A0текущего раздела'
                 },
                 {
                     type: 'card',
                     image: 'footer',
                     header: 'Футтер',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/footer',
                     description: 'Область в\u00A0самом конце страницы, на\u00A0которой размещена основная информация о\u00A0ресурсе'
+                },
+                {
+                    type: 'card',
+                    image: 'back',
+                    header: 'Кнопка возврата',
+                    link:  '/lessons/back',
+                    description: 'Как пользователю быстро вернутся к\u00A0началу страницы не\u00A0прокручивая ее\u00A0заново?'
                 },
                 {
                     type: 'card',
                     image: '404',
                     header: '404',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/404',
                     description: 'Интерактивная модель, которая показывает функциональность и\u00A0дизайн сайта до\u00A0его реализации'
                 },
                 
