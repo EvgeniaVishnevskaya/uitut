@@ -22,6 +22,7 @@ import Breadcrumbs from "./pages/lessons/breadcrumbs"
 import Back from "./pages/lessons/back"
 import Buttons from "./pages/lessons/buttons";
 import Inputs from "./pages/lessons/inputs";
+import Checkbox from "./pages/lessons/checkbox";
 
 const collection = [
     {
@@ -204,7 +205,7 @@ const collection = [
                         name: 'checkbox',
                         route: 'checkbox',
                         title: 'Чекбоксы',
-                        component: <Prototype />,
+                        component: <Checkbox />,
                         children: []        
                     },
                     {

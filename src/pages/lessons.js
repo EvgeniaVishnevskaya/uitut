@@ -216,7 +216,7 @@ export default function Lessons() {
                     type: 'card',
                     image: 'checkbox',
                     header: 'Чекбоксы',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/checkbox',
                     description: 'Позволяют выбирать один или несколько элементов из\u00A0списка, а\u00A0также включать или отключать элемент'
                 }, 
                 {

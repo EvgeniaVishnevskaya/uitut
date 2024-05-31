@@ -1,7 +1,5 @@
 import { DButton } from "../../ui/DButton";
 import { Link } from "react-router-dom";
-import buttonsLogo from '../../background/images/buttons_logo.png'
-import gradientButtons from '../../background/images/background_buttons.png'
 
 export default function Inputs() {
     return (
