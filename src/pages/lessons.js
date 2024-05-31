@@ -237,7 +237,7 @@ export default function Lessons() {
                     type: 'card',
                     image: 'dropdown',
                     header: 'Выпадающие списки',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/dropdown',
                     description: 'Отображают список вариантов на\u00A0временном поле'
                 }, 
                 {

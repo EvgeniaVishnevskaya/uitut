@@ -1,6 +1,5 @@
 import { DButton } from "../../ui/DButton";
 import { Link } from "react-router-dom";
-import gradientButtons from '../../background/images/background_buttons.png'
 
 
 export default function Radio() {
@@ -465,7 +464,6 @@ export default function Radio() {
                 </div>
                 <div className='flex flex-col h-auto lg:h-[460] lg:flex-row justify-around gap-6'>
                     <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full lg:w-10/12 rounded-2xl">
-                        <span className="font-light text-xl">Однако выпадающие меню требуют от пользователя дополнительных действий, как по количеству кликов, так и по когнитивным усилиям.</span>
                         <span className="font-light text-xl">Рассмотрите возможность использования раскрывающегося меню вместо радиокнопок, когда пространство ограничено.</span>
                     </div>
                     <div className="p-12 bg-background-blue-300 items-center flex flex-col gap-6 w-full lg:w-1/2 rounded-2xl">

@@ -25,6 +25,7 @@ import Inputs from "./pages/lessons/inputs";
 import Checkbox from "./pages/lessons/checkbox";
 import Switch from "./pages/lessons/switch";
 import Radio from "./pages/lessons/radio";
+import Dropdown from "./pages/lessons/dropdown";
 
 const collection = [
     {
@@ -221,7 +222,7 @@ const collection = [
                         name: 'dropdown',
                         route: 'dropdown',
                         title: 'Выпадающие списки',
-                        component: <Prototype />,
+                        component: <Dropdown />,
                         children: []        
                     },
                     {
