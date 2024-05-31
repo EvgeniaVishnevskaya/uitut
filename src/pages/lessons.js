@@ -223,7 +223,7 @@ export default function Lessons() {
                     type: 'card',
                     image: 'switch',
                     header: 'Свитчи',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/switch',
                     description: 'Включают или отключают выбранный элемент'
                 }, 
                 {

@@ -23,6 +23,7 @@ import Back from "./pages/lessons/back"
 import Buttons from "./pages/lessons/buttons";
 import Inputs from "./pages/lessons/inputs";
 import Checkbox from "./pages/lessons/checkbox";
+import Switch from "./pages/lessons/switch";
 
 const collection = [
     {
@@ -198,7 +199,7 @@ const collection = [
                         name: 'switch',
                         route: 'switch',
                         title: 'Свитчи',
-                        component: <Sitemap />,
+                        component: <Switch />,
                         children: []        
                     },
                     {

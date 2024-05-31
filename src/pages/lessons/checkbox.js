@@ -125,7 +125,7 @@ export default function Checkbox() {
                 </div>
             </div>
             <div className="flex flex-col gap-12">
-                <div className='flex flex-col lg:flex-row justify-around gap-6' style={({height:"460px"})}>
+                <div className='flex flex-col h-auto lg:h-[460] lg:flex-row justify-around gap-6' >
                     <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full lg:w-1/2 rounded-2xl">
                         <h3 className="text-2xl">Рекомендации по <br/>использованию</h3>
                         <span className="font-light text-xl">Чекбоксы могут быть полезны при представлении списка, который содержит подвыборки. Они также используются для включения или выключения определенного элемента, особенно в рабочей среде на компьютере. Важно грамотно визуально сгруппировать похожие варианты для удобства пользователя.</span>
