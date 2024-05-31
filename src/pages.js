@@ -24,6 +24,7 @@ import Buttons from "./pages/lessons/buttons";
 import Inputs from "./pages/lessons/inputs";
 import Checkbox from "./pages/lessons/checkbox";
 import Switch from "./pages/lessons/switch";
+import Radio from "./pages/lessons/radio";
 
 const collection = [
     {
@@ -213,7 +214,7 @@ const collection = [
                         name: 'radio',
                         route: 'radio',
                         title: 'Радиокнопки',
-                        component: <Sitemap />,
+                        component: <Radio />,
                         children: []        
                     },
                     {

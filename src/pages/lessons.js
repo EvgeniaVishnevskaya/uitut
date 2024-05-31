@@ -230,7 +230,7 @@ export default function Lessons() {
                     type: 'card',
                     image: 'radio',
                     header: 'Радио',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/radio',
                     description: 'Позволяют выбрать один вариант из\u00A0списка'
                 }, 
                 {
