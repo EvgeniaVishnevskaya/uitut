@@ -209,7 +209,7 @@ export default function Lessons() {
                     type: 'card',
                     image: 'input',
                     header: 'Инпуты',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/inputs',
                     description: 'Позволяют вводить текст в\u00A0пользовательский интерфейс'
                 },
                 {

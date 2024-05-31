@@ -21,6 +21,7 @@ import Footer from "./pages/lessons/footer"
 import Breadcrumbs from "./pages/lessons/breadcrumbs"
 import Back from "./pages/lessons/back"
 import Buttons from "./pages/lessons/buttons";
+import Inputs from "./pages/lessons/inputs";
 
 const collection = [
     {
@@ -189,7 +190,7 @@ const collection = [
                         name: 'inputs',
                         route: 'inputs',
                         title: 'Инпуты',
-                        component: <Prototype />,
+                        component: <Inputs />,
                         children: []        
                     },
                     {
