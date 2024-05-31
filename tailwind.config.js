@@ -35,6 +35,11 @@ export const theme = {
           100: '#F76507',
           200: '#FDAE7B',
           300: '#FFE7D8'
+        },
+        blue: {
+          100: '#F76507',
+          200: '#FDAE7B',
+          300: '#E5EFFF'
         }
       },
       main: {

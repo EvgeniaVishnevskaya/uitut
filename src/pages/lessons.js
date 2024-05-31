@@ -202,7 +202,7 @@ export default function Lessons() {
                     type: 'card',
                     image: 'button',
                     header: 'Кнопки',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/buttons',
                     description: 'Общие правила использования'
                 } ,
                 {

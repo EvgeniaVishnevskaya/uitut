@@ -20,6 +20,7 @@ import NotFound from "./pages/lessons/404"
 import Footer from "./pages/lessons/footer"
 import Breadcrumbs from "./pages/lessons/breadcrumbs"
 import Back from "./pages/lessons/back"
+import Buttons from "./pages/lessons/buttons";
 
 const collection = [
     {
@@ -181,7 +182,7 @@ const collection = [
                         name: 'buttons',
                         route: 'buttons',
                         title: 'Кнопки',
-                        component: <Sitemap />,
+                        component: <Buttons />,
                         children: []        
                     },
                     {
