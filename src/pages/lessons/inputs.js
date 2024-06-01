@@ -7,7 +7,7 @@ export default function Inputs() {
             <div className="flex flex-col gap-12">
                 <h1 className="text-4xl">Инпуты</h1>
                 <div className='flex flex-col lg:flex-row gap-6'>
-                    <span className='text-2xl font-light w-full lg:w-1/2'>Текстовые поля, или инпуты, являются важным элементом интерфейса, который позволяет пользователю вводить информацию. Они должны быть оформлены таким образом, чтобы выглядеть интерактивными и привлекать внимание пользователя. Обычно существуют два типа текстовых полей: заполненные и контурные. </span>
+                    <span className='text-2xl font-light font-inter w-full lg:w-1/2'>Текстовые поля, или&nbsp;инпуты, являются важным элементом интерфейса, который позволяет пользователю вводить информацию. Они&nbsp;должны быть оформлены таким образом, чтобы&nbsp;выглядеть интерактивными и&nbsp;привлекать внимание пользователя. Обычно существуют два&nbsp;типа текстовых полей: заполненные и&nbsp;контурные. </span>
 
                     <div className=" bg-background-blue-300 flex justify-center gap-6 w-full lg:w-1/2 rounded-2xl">
                         <svg xmlns="http://www.w3.org/2000/svg" width="508" height="288" viewBox="0 0 508 288"
@@ -110,18 +110,18 @@ export default function Inputs() {
                             </defs>
                         </svg>
                     </div>
-                    <span className='text-2xl font-light w-full lg:w-1/2'>Очень важно, чтобы состояние текстового поля (пустое, с вводом, с ошибкой и т.д.) было видно сразу. Это помогает пользователям легче ориентироваться и понимать, какую информацию они уже ввели и где возникли ошибки.
-Метки и сообщения об ошибках, связанные с текстовыми полями, должны быть краткими и простыми в использовании.</span>
+                    <span className='text-2xl font-inter font-light w-full lg:w-1/2'>Очень важно, чтобы&nbsp;состояние текстового поля (пустое, с&nbsp;вводом, с&nbsp;ошибкой&nbsp;и&nbsp;т.д.) было видно сразу. Это&nbsp;помогает пользователям легче ориентироваться и&nbsp;понимать, какую информацию они&nbsp;уже ввели и&nbsp;где&nbsp;возникли ошибки.
+Метки и&nbsp;сообщения об&nbsp;ошибках, связанные с&nbsp;текстовыми полями, должны быть краткими и&nbsp;простыми в&nbsp;использовании.</span>
                 </div>
             </div>
 
             <div className="flex flex-col gap-12">
                 <div className='flex flex-col lg:flex-row gap-6'>
                     <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full lg:w-3/5 rounded-2xl">
-                        <h3 className="text-2xl">Рекомендации по использованию</h3>
-                        <span className="font-light text-xl">Используйте текстовое поле, когда кому‑то нужно ввести текст в пользовательский интерфейс, например заполнить контактную или платёжную информацию.</span>
+                        <h3 className="text-3xl">Рекомендации по использованию</h3>
+                        <span className="font-light font-inter text-xl">Используйте текстовое поле, когда кому‑то нужно ввести текст в&nbsp;пользовательский интерфейс, например заполнить контактную или&nbsp;платёжную информацию.</span>
                     </div>
-                    <div className="p-12 bg-background-blue-300 flex justify-center gap-6   rounded-2xl">
+                    <div className=" bg-background-blue-300 flex justify-center gap-6   rounded-2xl">
                         <svg xmlns="http://www.w3.org/2000/svg" width="413" height="316" viewBox="0 0 413 316"
                              fill="none">
                             <rect x="48.5" y="48.5" width="316" height="27" rx="5.5" fill="#FAFBFF"/>
@@ -189,7 +189,7 @@ export default function Inputs() {
                     </div>
                 </div>
                 <div className='flex flex-col lg:flex-row gap-6'>
-                    <div className="p-12 bg-background-blue-300 flex justify-center gap-6   rounded-2xl">
+                    <div className=" bg-background-blue-300 flex items-center    justify-center gap-6   rounded-2xl">
                         <svg xmlns="http://www.w3.org/2000/svg" width="419" height="212" viewBox="0 0 419 212"
                              fill="none">
                             <rect x="48.5" y="48.5" width="322" height="47" rx="5.5" fill="#FAFBFF"/>
@@ -223,17 +223,17 @@ export default function Inputs() {
                         </svg>
                     </div>
                     <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full lg:w-3/5 rounded-2xl">
-                        <h3 className="text-2xl">Название</h3>
-                        <span className="font-light text-xl">Название инпута информирует пользователей о том, какая информация запрашивается для текстового поля. Каждое текстовое поле должно иметь назначение.</span>
-                        <span className="font-light text-xl">Название не должно занимать несколько строк.</span>
+                        <h3 className="text-[22px]">Название</h3>
+                        <span className="font-light font-inter text-xl">Название инпута информирует пользователей о&nbsp;том, какая информация запрашивается для&nbsp;текстового поля. Каждое текстовое поле должно иметь назначение.</span>
+                        <span className="font-light font-inter text-xl">Название не&nbsp;должно занимать несколько строк.</span>
                     </div>
                 </div>
                 <div className='flex flex-col lg:flex-row gap-6'>
                     <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full lg:w-3/5 rounded-2xl">
-                        <h3 className="text-2xl">Обязательное поле</h3>
-                        <span className="font-light text-xl">Чтобы указать, что поле является обязательным, отобразите звёздочку (*) рядом с названием поля и укажите в сопроводительном тексте, что звёздочки обозначают обязательные поля.</span>
+                        <h3 className="text-[22px]">Обязательное поле</h3>
+                        <span className="font-light font-inter text-xl">Чтобы&nbsp;указать, что&nbsp;поле является обязательным, отобразите звёздочку (*) рядом с&nbsp;названием поля и&nbsp;укажите в&nbsp;сопроводительном тексте, что&nbsp;звёздочки обозначают обязательные поля.</span>
                     </div>
-                    <div className="p-12 bg-background-blue-300 flex justify-center gap-6   rounded-2xl">
+                    <div className=" items-center bg-background-blue-300 flex justify-center gap-6   rounded-2xl">
                         <svg xmlns="http://www.w3.org/2000/svg" width="413" height="170" viewBox="0 0 413 170"
                              fill="none">
                             <g clip-path="url(#clip0_388_1060)">
@@ -264,7 +264,7 @@ export default function Inputs() {
                     </div>
                 </div>
                 <div className='flex flex-col lg:flex-row gap-6'>
-                    <div className="p-12 bg-background-blue-300 flex justify-center gap-6   rounded-2xl">
+                    <div className=" items-center bg-background-blue-300 flex justify-center gap-6   rounded-2xl">
                         <svg xmlns="http://www.w3.org/2000/svg" width="419" height="238" viewBox="0 0 419 238"
                              fill="none">
                             <rect x="48.5" y="48.5" width="322" height="47" rx="5.5" fill="#FAFBFF"/>
@@ -317,18 +317,18 @@ export default function Inputs() {
                         </svg>
                     </div>
                     <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full lg:w-3/5 rounded-2xl">
-                        <h3 className="text-2xl">Проверяющее поле</h3>
-                        <span className="font-light text-xl">Для текстовых полей, проверяющих их содержимое (например, пароли), замените вспомогательный текст текстом ошибки, если это применимо. Замена вспомогательного текста текстом ошибки помогает предотвратить появление новых строк текста в макете, что приводит к смещению содержимого в соответствии с ним.</span>
+                        <h3 className="text-[22px]">Проверяющее поле</h3>
+                        <span className="font-light font-inter text-xl">Для&nbsp;текстовых полей, проверяющих их&nbsp;содержимое (например, пароли), замените вспомогательный текст текстом ошибки, если&nbsp;это&nbsp;применимо. Замена вспомогательного текста текстом ошибки помогает предотвратить появление новых строк текста в&nbsp;макете, что&nbsp;приводит к&nbsp;смещению содержимого в&nbsp;соответствии с&nbsp;ним.</span>
                     </div>
                 </div>
                 <div className='flex flex-col lg:flex-row gap-6'>
                     <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full lg:w-3/5 rounded-2xl">
-                        <h3 className="text-2xl">Иконки</h3>
-                        <span className="font-light text-xl">Иконки в текстовых полях не являются обязательными. Они могут описывать допустимые методы ввода (например, значок микрофона), предоставлять возможность доступа к дополнительным функциям (например, очистка содержимого поля) и могут обозначать ошибку.</span>
-                        <span className="font-light text-xl">Начальные и конечные иконки меняют своё положение в зависимости от контекста LTR или RTL.</span>
-                        <span className="font-light text-xl">Изображения высотой 24 dp можно размещать внутри текстовых полей. Такая высота изображения обеспечивает оптимальное заполнение сверху и снизу поля и соответствует рекомендациям по размеру значков.</span>
+                        <h3 className="text-[22px]">Иконки</h3>
+                        <span className="font-light font-inter text-xl">Иконки в&nbsp;текстовых полях не&nbsp;являются обязательными. Они могут описывать допустимые методы ввода (например, значок микрофона), предоставлять возможность доступа к&nbsp;дополнительным функциям (например, очистка содержимого поля) и&nbsp;могут обозначать ошибку.</span>
+                        <span className="font-light font-inter text-xl">Начальные и&nbsp;конечные иконки меняют своё положение в&nbsp;зависимости от&nbsp;контекста LTR или&nbsp;RTL.</span>
+                        <span className="font-light font-inter text-xl">Изображения высотой 24&nbsp;dp можно размещать внутри текстовых полей. Такая высота изображения обеспечивает оптимальное заполнение сверху и&nbsp;снизу поля и&nbsp;соответствует рекомендациям по&nbsp;размеру значков.</span>
                     </div>
-                    <div className="p-12 bg-background-blue-300 flex justify-center gap-6   rounded-2xl">
+                    <div className="items-center bg-background-blue-300 flex justify-center gap-6   rounded-2xl">
                         <svg xmlns="http://www.w3.org/2000/svg" width="413" height="484" viewBox="0 0 413 484"
                              fill="none">
                             <g clip-path="url(#clip0_388_1098)">
