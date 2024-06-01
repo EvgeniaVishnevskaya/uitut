@@ -251,7 +251,7 @@ export default function Lessons() {
                     type: 'card',
                     image: 'slider',
                     header: 'Слайдеры',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/slider',
                     description: 'Позволяют пользователям выбирать из\u00A0диапазона значений'
                 }, 
                 {

@@ -27,6 +27,7 @@ import Switch from "./pages/lessons/switch";
 import Radio from "./pages/lessons/radio";
 import Dropdown from "./pages/lessons/dropdown";
 import Chips from "./pages/lessons/chips";
+import Slider from "./pages/lessons/slider";
 
 const collection = [
     {
@@ -237,7 +238,7 @@ const collection = [
                         name: 'slider',
                         route: 'slider',
                         title: 'Слайдеры',
-                        component: <Prototype />,
+                        component: <Slider />,
                         children: []        
                     },
                 ]      
