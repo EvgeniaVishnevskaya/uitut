@@ -8,7 +8,7 @@ export default function Radio() {
             <div className="flex flex-col gap-12">
                 <h1 className="text-4xl">Радио кнопки</h1>
                 <div className='flex flex-col lg:flex-row gap-6'>
-                    <span className='text-2xl font-light w-full lg:w-1/2'>Радиокнопки — элемент интерфейса, который позволяет выбирать один вариант из предложенного списка. Они дают возможность делать единичный выбор.</span>
+                    <span className='text-2xl font-light font-inter w-full lg:w-1/2'>Радиокнопки&nbsp;— элемент интерфейса, который позволяет выбирать один вариант из&nbsp;предложенного списка. Они&nbsp;дают возможность делать единичный выбор.</span>
 
                     <div
                         className="p-12 bg-background-blue-300 flex justify-center items-center gap-6 w-full lg:w-1/2 rounded-2xl">
@@ -155,8 +155,8 @@ export default function Radio() {
             <div className="flex flex-col gap-12">
                 <div className='flex flex-col h-auto lg:h-[288] lg:flex-row justify-around gap-6'>
                     <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full  lg:w-10/12 rounded-2xl">
-                        <h3 className="text-2xl">Рекомендации по <br/>использованию</h3>
-                        <span className="font-light text-xl">Выделенный элемент помогает пользователям быстрее ориентироваться и делают процесс выбора более удобным и эффективным.</span>
+                        <h3 className="text-3xl">Рекомендации по <br/>использованию</h3>
+                        <span className="font-light font-inter text-xl">Выделенный элемент помогает пользователям быстрее ориентироваться и&nbsp;делают процесс выбора более удобным и&nbsp;эффективным.</span>
                     </div>
                     <svg className="lg:w-1/2" xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 419 288" fill="none">
@@ -457,14 +457,14 @@ export default function Radio() {
                         </svg>
                     </div>
                     <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full lg:w-10/12 rounded-2xl">
-                        <span className="font-light text-xl">Рассмотрите возможность использования раскрывающегося меню вместо переключателей, когда важно сэкономить место на экране.</span>
-                        <span className="font-light text-xl">Используйте радиокнопки, если имеется пять или меньше вариантов.</span>
+                        <span className="font-light font-inter text-xl">Рассмотрите возможность использования раскрывающегося меню вместо переключателей, когда важно сэкономить место на&nbsp;экране.</span>
+                        <span className="font-light font-inter text-xl">Используйте радиокнопки, если&nbsp;имеется пять или&nbsp;меньше вариантов.</span>
                     </div>
 
                 </div>
                 <div className='flex flex-col h-auto lg:h-[460] lg:flex-row justify-around gap-6'>
                     <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full lg:w-10/12 rounded-2xl">
-                        <span className="font-light text-xl">Рассмотрите возможность использования раскрывающегося меню вместо радиокнопок, когда пространство ограничено.</span>
+                        <span className="font-light font-inter text-xl">Рассмотрите возможность использования раскрывающегося меню вместо радиокнопок, когда пространство ограничено.</span>
                     </div>
                     <div className="p-12 bg-background-blue-300 items-center flex flex-col gap-6 w-full lg:w-1/2 rounded-2xl">
                         <svg xmlns="http://www.w3.org/2000/svg" width="331" height="242" viewBox="0 0 331 242"
