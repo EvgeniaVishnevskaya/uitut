@@ -9,10 +9,10 @@ export default function Dropdown() {
             <div className="flex flex-col gap-12">
                 <h1 className="text-4xl">Выпадающие списки</h1>
                 <div className='flex flex-col lg:flex-row gap-6'>
-                    <span className='text-2xl font-light w-full lg:w-1/2'>Выпадающие списки — это элемент интерфейса, который дает возможность выбирать из списка вариантов. Эти списки обычно отображаются в виде вертикального списка элементов, который можно прокручивать. Когда пользователь выбирает элемент из списка, он становится видимым в текстовом поле или кнопке, от которой открывается список.</span>
+                    <span className='text-2xl font-inter font-light w-full lg:w-1/2'>Выпадающие списки&nbsp;— это элемент интерфейса, который дает возможность выбирать из&nbsp;списка вариантов. Эти&nbsp;списки обычно отображаются в&nbsp;виде вертикального списка элементов, который можно прокручивать. Когда пользователь выбирает элемент из&nbsp;списка, он&nbsp;становится видимым в&nbsp;текстовом поле или&nbsp;кнопке, от&nbsp;которой открывается список.</span>
 
                     <div
-                        className="p-12 bg-background-blue-300 flex justify-center items-center gap-6 w-full lg:w-1/2 rounded-2xl">
+                        className=" bg-background-blue-300 flex justify-center items-center gap-6 w-full lg:w-1/2 rounded-2xl">
                         <svg xmlns="http://www.w3.org/2000/svg" width="468" height="152" viewBox="0 0 468 152"
                              fill="none">
                             <g filter="url(#filter0_dd_403_4670)">
@@ -115,7 +115,7 @@ export default function Dropdown() {
                     </div>
                 </div>
             </div>
-            <div className='w-full p-12 rounded-2xl'
+            <div className='w-full p-12 pr-20 pl-20 rounded-2xl'
                  style={({
                      backgroundImage: `url(${gradientButtons})`,
                      backgroundRepeat: 'no-repeat',
@@ -129,10 +129,10 @@ export default function Dropdown() {
             </div>
             <div className="flex flex-col gap-12">
                 <div className='flex flex-col h-auto lg:h-[288] lg:flex-row justify-around gap-6'>
-                    <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full  lg:w-10/12 rounded-2xl">
-                        <span className="font-light text-xl">Важно сделать так, чтобы список было легко открыть и закрыть. Пользователи должны иметь возможность просмотреть все доступные варианты, прежде чем сделать свой выбор. При этом, после выбора определённого варианта, список должен автоматически закрываться, чтобы не мешать пользователю.</span>
+                    <div className="p-12 font-inter bg-background-blue-300 flex flex-col gap-6 w-full  lg:w-10/12 rounded-2xl">
+                        <span className="font-light text-xl">Важно сделать так, чтобы&nbsp;список было легко открыть и&nbsp;закрыть. Пользователи должны иметь возможность просмотреть все&nbsp;доступные варианты, прежде чем&nbsp;сделать свой выбор. При&nbsp;этом, после&nbsp;выбора определённого варианта, список должен автоматически закрываться, чтобы&nbsp;не&nbsp;мешать пользователю.</span>
                     </div>
-                    <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full  lg:w-10/12 rounded-2xl">
+                    <div className="items-center justify-center bg-background-blue-300 flex flex-col gap-6 w-full  lg:w-10/12 rounded-2xl">
                         <svg xmlns="http://www.w3.org/2000/svg" width="383" height="178" viewBox="0 0 383 178"
                              fill="none">
                             <g filter="url(#filter0_dd_403_4679)">
@@ -230,7 +230,7 @@ export default function Dropdown() {
                     </div>
                 </div>
                 <div className='flex flex-col h-auto lg:h-[460] lg:flex-row justify-around gap-6'>
-                    <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full lg:w-1/2 rounded-2xl">
+                    <div className="items-center justify-center font-inter bg-background-blue-300 flex flex-col gap-6 w-full lg:w-1/2 rounded-2xl">
                         <svg xmlns="http://www.w3.org/2000/svg" width="419" height="236" viewBox="0 0 419 236"
                              fill="none">
                             <rect width="419" height="236" rx="20" fill="#E5EFFF"/>
@@ -299,15 +299,15 @@ export default function Dropdown() {
                             </defs>
                         </svg>
                     </div>
-                    <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full lg:w-10/12 rounded-2xl">
-                        <span className="font-light text-xl">Выпадающие списки могут открываться из различных компонентов интерфейса, включая кнопки со значками и текстовые поля. Это делает их универсальными и позволяет использовать в различных частях интерфейса.</span>
+                    <div className="p-12 font-inter bg-background-blue-300 flex flex-col gap-6 w-full lg:w-10/12 rounded-2xl">
+                        <span className="font-light text-xl">Выпадающие списки могут открываться из&nbsp;различных компонентов интерфейса, включая кнопки со&nbsp;значками и&nbsp;текстовые поля. Это&nbsp;делает их&nbsp;универсальными и&nbsp;позволяет использовать в&nbsp;различных частях интерфейса.</span>
                     </div>
 
                 </div>
                 <div className='flex flex-col h-auto lg:h-[460] lg:flex-row justify-around gap-6'>
                     <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full lg:w-10/12 rounded-2xl">
 
-                        <span className="font-light text-xl">Выпадающие списки располагаются относительно края экрана или браузера. Обычно они появляются ниже, рядом (или перед) элементом, который их генерирует. Если они могут быть обрезаны краем браузера или экрана, меню может вместо этого появиться слева, справа или над элементом, который его создаёт.</span>
+                        <span className="font-light font-inter text-xl">Выпадающие списки располагаются относительно края экрана или&nbsp;браузера. Обычно они&nbsp;появляются ниже, рядом (или&nbsp;перед) элементом, который их&nbsp;генерирует. Если&nbsp;они&nbsp;могут быть обрезаны краем браузера или&nbsp;экрана, меню может вместо этого появиться слева, справа или&nbsp;над&nbsp;элементом, который его&nbsp;создаёт.</span>
                     </div>
                     <div
                         className="bg-background-blue-300 items-center flex flex-col gap-6 w-full lg:w-1/2 rounded-2xl">
