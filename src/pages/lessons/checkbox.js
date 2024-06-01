@@ -9,9 +9,9 @@ export default function Checkbox() {
             <div className="flex flex-col gap-12">
                 <h1 className="text-4xl">Чекбоксы</h1>
                 <div className='flex flex-col lg:flex-row gap-6'>
-                    <span className='text-2xl font-light w-full lg:w-1/2'>Чекбоксы позволяют выбирать несколько вариантов из предложенного списка. Их основное преимущество заключается в том, что они предоставляют пользователям возможность сделать множественный выбор.</span>
+                    <span className='text-2xl font-light font-inter w-full lg:w-1/2'>Чекбоксы позволяют выбирать несколько вариантов из&nbsp;предложенного списка. Их&nbsp;основное преимущество заключается в&nbsp;том, что&nbsp;они&nbsp;предоставляют пользователям возможность сделать множественный выбор.</span>
 
-                    <div className="p-12 bg-background-blue-300 flex justify-center items-center gap-6 w-full lg:w-1/2 rounded-2xl">
+                    <div className=" bg-background-blue-300 flex justify-center items-center gap-6 w-full lg:w-1/2 rounded-2xl">
                         <svg xmlns="http://www.w3.org/2000/svg" width="350" height="98" viewBox="0 0 350 98"
                              fill="none">
                             <rect x="0.5" width="349" height="98" rx="6" fill="#FAFBFF"/>
@@ -114,21 +114,21 @@ export default function Checkbox() {
                     </div>
                 </div>
             </div>
-            <div className='w-full p-12 rounded-2xl'
+            <div className='w-full p-12 pr-20 pl-20 rounded-2xl'
                  style={({
                      backgroundImage: `url(${gradientButtons})`,
                      backgroundRepeat: 'no-repeat',
                      backgroundSize: 'cover'
                  })}>
                 <div className='flex gap-6'>
-                    <p style={({color: "#FAFBFF"})} className=' font-light text-3xl text-center'>Значок чекбокса – это небольшой квадрат, который можно отметить галочкой или крестиком.</p>
+                    <p style={({color: "#FAFBFF"})} className=' font-light text-3xl text-center'>Значок чекбокса – это&nbsp;небольшой квадрат, который можно отметить галочкой или&nbsp;крестиком.</p>
                 </div>
             </div>
             <div className="flex flex-col gap-12">
                 <div className='flex flex-col h-auto lg:h-[460] lg:flex-row justify-around gap-6' >
                     <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full lg:w-1/2 rounded-2xl">
-                        <h3 className="text-2xl">Рекомендации по <br/>использованию</h3>
-                        <span className="font-light text-xl">Чекбоксы могут быть полезны при представлении списка, который содержит подвыборки. Они также используются для включения или выключения определенного элемента, особенно в рабочей среде на компьютере. Важно грамотно визуально сгруппировать похожие варианты для удобства пользователя.</span>
+                        <h3 className="text-3xl">Рекомендации по <br/>использованию</h3>
+                        <span className="font-light font-inter text-xl">Чекбоксы могут быть полезны при&nbsp;представлении списка, который содержит подвыборки. Они&nbsp;также&nbsp;используются для&nbsp;включения или&nbsp;выключения определённого элемента, особенно в&nbsp;рабочей среде на&nbsp;компьютере. Важно грамотно визуально сгруппировать похожие варианты для&nbsp;удобства пользователя.</span>
                     </div>
                         <svg className="lg:w-1/2" xmlns="http://www.w3.org/2000/svg" width="419" viewBox="0 0 419 400"
                              fill="none">
