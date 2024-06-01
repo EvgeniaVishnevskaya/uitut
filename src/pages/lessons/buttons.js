@@ -664,7 +664,7 @@ export default function Buttons() {
             </div>
 
             <div className="flex gap-6 justify-between flex-col lg:flex-row">
-                <div className="flex flex-col p-12 gap-8 bg-background-blue-300 rounded-[20px] lg:w-3/5">
+                <div className="flex flex-col p-12 gap-8 bg-background-blue-300 rounded-[20px] lg:w-10/12">
                     <h1 className="text-3xl">Рекомендации <br/> по использованию</h1>
                     <p className="text-xl font-inter">Используйте комбинацию стилей кнопок на&nbsp;одном экране,
                         чтобы&nbsp;сосредоточить внимание на&nbsp;основном действии, предлагая альтернативы.</p>
