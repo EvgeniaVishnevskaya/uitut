@@ -253,23 +253,53 @@ export default function Lessons() {
                     header: 'Слайдеры',
                     link:  '/lessons/slider',
                     description: 'Позволяют пользователям выбирать из\u00A0диапазона значений'
-                }, 
-                {
-                    type: 'card',
-                    image: 'datePicker',
-                    header: 'Выбор даты',
-                    link:  '/lessons/sitemap',
-                    description: 'Помогает выбрать дату или диапазон дат'
-                }, 
-                {
-                    type: 'card',
-                    image: 'timePicker',
-                    header: 'Выбор времени',
-                    link:  '/lessons/sitemap',
-                    description: 'Помогает пользователю выбирать и\u00A0устанавливать определённое время'
-                },  
+                }
                 
                    
+            ]
+        },
+        {
+            categoryName: 'Контентсодержащие элементы',
+            colorStyle: {
+                color: "bg-background-orange-300",
+                hovercolor:"bg-background-orange-200"
+            },
+            styleType: 'orange',
+            elements: [
+                {
+                    type: 'text',
+                    text: "Элементы содержания хранят информацию и действия, включая другие компоненты, такие как кнопки, меню или чипсы.  \n" +
+                        "Основная функция содержащих элементов — обеспечение чёткого и понятного представления информации. Они помогают пользователям навигироваться по интерфейсу, облегчая взаимодействие с ним. "
+                },
+                {
+                    type: 'card',
+                    image: 'divider',
+                    header: 'Драйвер',
+                    link:  '/lessons/divider',
+                    description: 'Элемент, визуально разделяющий контент'
+                } ,
+                {
+                    type: 'card',
+                    image: 'card',
+                    header: 'Карточки',
+                    link:  '/lessons/card',
+                    description: 'Контейнер для хранения связанных элементов информации'
+                },
+                {
+                    type: 'card',
+                    image: 'carousel',
+                    header: 'Карусель',
+                    link:  '/lessons/carousel',
+                    description: 'Интерактивный элемент дизайна, который содержит различные визуальные элементы'
+                },
+                {
+                    type: 'card',
+                    image: 'dialog',
+                    header: 'Диалоговое окно',
+                    link:  '/lessons/dialog',
+                    description: 'Предоставляет возможность коммуникации между системой и пользователем'
+                },
+
             ]
         },
 

@@ -539,7 +539,7 @@ export default function Slider() {
                 </div>
                 <div className="p-12 bg-background-blue-300 flex flex-col gap-6 w-full lg:w-9/12 rounded-2xl">
                     <h1 className="text-3xl">Слайдер диапазона</h1>
-                    <span className="font-light font-inter text-xl">Если ползунки имеют два маркёра, они указывают минимальное и максимальное значения в диапазоне.</span>
+                    <span className="font-light font-inter text-xl">Если&nbsp;ползунки имеют два&nbsp;маркёра, они&nbsp;указывают минимальное и&nbsp;максимальное значения в&nbsp;диапазоне.</span>
                 </div>
             </div>
 

@@ -273,26 +273,7 @@ function App({children}) {
             hovercolor:"bg-background-controls",
             description: 'Позволяют пользователям выбирать из\u00A0диапазона значений'
         },
-        {
-            type: 'card',
-            image: 'datePicker',
-            header: 'Выбор даты',
-            link:  '/lessons/sitemap',
-            styleType: 'main',
-            color: "bg-background-content",
-            hovercolor:"bg-background-controls",
-            description: 'Помогает выбрать дату или диапазон дат'
-        },
-        {
-            type: 'card',
-            image: 'timePicker',
-            header: 'Выбор времени',
-            link:  '/lessons/sitemap',
-            styleType: 'main',
-            color: "bg-background-content",
-            hovercolor:"bg-background-controls",
-            description: 'Помогает пользователю выбирать и\u00A0устанавливать определённое время'
-        },
+
     ]
     function findIndexByKey(key, value) {
         const element = menus.find(item => item[key] === value);

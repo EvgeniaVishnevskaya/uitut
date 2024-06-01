@@ -28,6 +28,9 @@ import Radio from "./pages/lessons/radio";
 import Dropdown from "./pages/lessons/dropdown";
 import Chips from "./pages/lessons/chips";
 import Slider from "./pages/lessons/slider";
+import Divider from "./pages/lessons/divider";
+import Cards from "./pages/lessons/cards";
+import Carousel from "./pages/lessons/carousel";
 
 const collection = [
     {
@@ -250,34 +253,27 @@ const collection = [
                         name: 'divider',
                         route: 'divider',
                         title: 'Разделитель',
-                        component: <Sitemap />,
+                        component: <Divider />,
                         children: []        
                     },
                     {
                         name: 'card',
                         route: 'card',
                         title: 'Карточки',
-                        component: <Prototype />,
+                        component: <Cards />,
                         children: []        
                     },
                     {
                         name: 'carousel',
                         route: 'carousel',
                         title: 'Карусель',
-                        component: <Prototype />,
+                        component: <Carousel />,
                         children: []        
                     },
                     {
                         name: 'dialog',
                         route: 'dialog',
                         title: 'Диалоговое окно',
-                        component: <Prototype />,
-                        children: []        
-                    },
-                    {
-                        name: 'lists',
-                        route: 'lists',
-                        title: 'Списки',
                         component: <Prototype />,
                         children: []        
                     }
