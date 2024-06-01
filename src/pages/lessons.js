@@ -105,7 +105,7 @@ export default function Lessons() {
                     type: 'card',
                     image: 'layout',
                     header: 'Макеты',
-                    link:  '/lessons/layput',
+                    link:  '/lessons/layout',
                     description: 'Комбинация макета в\u00A0одну пространственную композицию'
                 },
                 
@@ -244,7 +244,7 @@ export default function Lessons() {
                     type: 'card',
                     image: 'chips',
                     header: 'Чипсы',
-                    link:  '/lessons/sitemap',
+                    link:  '/lessons/chips',
                     description: 'Помогают вводить информацию, делать выбор, фильтровать контент или запускать действия'
                 }, 
                 {

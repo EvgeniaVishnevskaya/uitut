@@ -749,13 +749,13 @@ export default function Buttons() {
             </div>
 
             <div className='flex justify-between gap-6 flex-wrap'>
-                <Link to='/lessons/layout'>
+                <Link to='/lessons/404'>
                     <DButton size="large">Предыдущая глава</DButton>
                 </Link>
                 <Link to={'/lessons'}>
                     <DButton size="large">Все уроки</DButton>
                 </Link>
-                <Link to='/lessons/logo'>
+                <Link to='/lessons/inputs'>
                     <DButton size="large" type="primary">Следующая глава</DButton>
                 </Link>
             </div>

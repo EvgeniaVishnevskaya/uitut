@@ -141,7 +141,7 @@ export default function NotFound() {
             <Link to={'/lessons'}>
                 <DButton size="large">Все уроки</DButton>
             </Link>
-            <Link to='/lessons'>
+            <Link to='/lessons/buttons'>
                 <DButton size="large" type="primary">Следующая глава</DButton>
             </Link>
         </div>

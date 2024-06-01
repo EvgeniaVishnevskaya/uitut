@@ -6,6 +6,9 @@ import Breadcrumbs from './ui/breadcrumbs'
 import { DButton } from './ui/DButton'
 
 import Menu from './ui/menu'
+import gradientButtons from "./background/images/background_buttons.png";
+import CardGenerate from "./ui/cardGenerate";
+import Card from "./ui/card";
 
 
 
@@ -13,6 +16,291 @@ function App({children}) {
   const [menu, setMenu] = useState(false)
   const location = useLocation()?.pathname
   const upperMenuItems = usePages('expandable')
+    const menus = [
+        {
+            type: 'text',
+            text: "Создание нового интерфейса для цифрового продукта начинается с\u00A0разработки логики продукта."
+        },
+        {
+            type: 'card',
+            image: 'sitemap',
+            header: 'Карта сайта',
+            color: "bg-background-pink-300",
+            hovercolor:"bg-background-pink-200",
+            styleType: 'pink',
+            link:  '/lessons/sitemap',
+            description: 'Общий путь сайта от\u00A0главной, до\u00A0самых мелких страниц'
+        },
+        {
+            type: 'card',
+            image: 'prototype',
+            header: 'Прототип',
+            color: "bg-background-pink-300",
+            hovercolor:"bg-background-pink-200",
+            styleType: 'pink',
+            link:  '/lessons/prototype',
+            description: 'Интерактивная модель, которая показывает функциональность и\u00A0дизайн сайта до\u00A0его реализации'
+        },
+        {
+            type: 'card',
+            image: 'adaptive',
+            header: 'Адаптивная вёрстка',
+            color: "bg-background-content",
+            hovercolor:"bg-background-controls",
+            styleType: 'main',
+            link:  '/lessons/adaptive',
+            description: 'Создание нескольких версий сайта для разных типов устройств'
+        } ,
+        {
+            type: 'card',
+            image: 'responsive',
+            header: 'Респонсив дизайн',
+            color: "bg-background-content",
+            hovercolor:"bg-background-controls",
+            styleType: 'main',
+            link:  '/lessons/responsive',
+            description: 'Создание гибких макетов для изменения внешнего вида сайта в\u00A0зависимости от\u00A0размера экрана'
+        },
+        {
+            type: 'card',
+            image: 'system',
+            header: 'Система',
+            styleType: 'orange',
+            color: "bg-background-orange-300",
+            hovercolor:"bg-background-orange-200",
+            link:  '/lessons/system',
+            description: 'Что такое пространственная система?'
+        } ,
+        {
+            type: 'card',
+            image: 'basics',
+            styleType: 'orange',
+            color: "bg-background-orange-300",
+            hovercolor:"bg-background-orange-200",
+            header: 'Основы построения',
+            link:  '/lessons/basics',
+            description: 'Правила размеров и\u00A0интервалов'
+        },
+
+        {
+            type: 'card',
+            image: 'borders',
+            styleType: 'orange',
+            color: "bg-background-orange-300",
+            hovercolor:"bg-background-orange-200",
+            header: 'Применение',
+            link:  '/lessons/border',
+            description: 'Применение пространственного масштаба\u00A0к элементам интерфейса'
+        },
+        {
+            type: 'card',
+            image: 'grid',
+            header: 'Сетка',
+            color: "bg-background-orange-300",
+            hovercolor:"bg-background-orange-200",
+            styleType: 'orange',
+            link:  '/lessons/grid',
+            description: 'Наведение порядка в\u00A0макете при помощи пространственной сетки'
+        },
+        {
+            type: 'card',
+            image: 'layout',
+            header: 'Макеты',
+            color: "bg-background-orange-300",
+            hovercolor:"bg-background-orange-200",
+            styleType: 'orange',
+            link:  '/lessons/layout',
+            description: 'Комбинация макета в\u00A0одну пространственную композицию'
+        },
+
+        {
+            type: 'card',
+            image: 'menu',
+            header: 'Меню',
+            styleType: 'pink',
+            color: "bg-background-pink-300",
+            hovercolor:"bg-background-pink-200",
+            link:  '/lessons/menu',
+            description: 'Главный элемент при создании навигации'
+        } ,
+        {
+            type: 'card',
+            image: 'logo',
+            header: 'Логотип',
+            styleType: 'pink',
+            color: "bg-background-pink-300",
+            hovercolor:"bg-background-pink-200",
+            link:  '/lessons/logo',
+            description: 'Привычный для пользователя паттерн\u00A0— добавление в\u00A0логотип ссылки на\u00A0главную страницу ресурса'
+        },
+        {
+            type: 'card',
+            image: 'icons',
+            header: 'Иконки',
+            styleType: 'pink',
+            color: "bg-background-pink-300",
+            hovercolor:"bg-background-pink-200",
+            link:  '/lessons/icons',
+            description: 'Используются для упрощения восприятия клиентом информации'
+        },
+        {
+            type: 'card',
+            image: 'links',
+            header: 'Ссылки',
+            styleType: 'pink',
+            color: "bg-background-pink-300",
+            hovercolor:"bg-background-pink-200",
+            link:  '/lessons/links',
+            description: 'Элемент навигации для быстрого перехода к\u00A0необходимому контенту'
+        },
+        {
+            type: 'card',
+            image: 'breadcrumbs',
+            header: 'Хлебные крошки',
+            color: "bg-background-pink-300",
+            styleType: 'pink',
+            hovercolor:"bg-background-pink-200",
+            link:  '/lessons/breadcrumbs',
+            description: 'Показывает путь от\u00A0главной страницы до\u00A0текущего раздела'
+        },
+        {
+            type: 'card',
+            image: 'footer',
+            color: "bg-background-pink-300",
+            hovercolor:"bg-background-pink-200",
+            styleType: 'pink',
+            header: 'Футтер',
+            link:  '/lessons/footer',
+            description: 'Область в\u00A0самом конце страницы, на\u00A0которой размещена основная информация о\u00A0ресурсе'
+        },
+        {
+            type: 'card',
+            image: 'back',
+            color: "bg-background-pink-300",
+            hovercolor:"bg-background-pink-200",
+            styleType: 'pink',
+            header: 'Кнопка возврата',
+            link:  '/lessons/back',
+            description: 'Как пользователю быстро вернутся к\u00A0началу страницы не\u00A0прокручивая ее\u00A0заново?'
+        },
+        {
+            type: 'card',
+            image: '404',
+            header: '404',
+            color: "bg-background-pink-300",
+            styleType: 'pink',
+            hovercolor:"bg-background-pink-200",
+            link:  '/lessons/404',
+            description: 'Интерактивная модель, которая показывает функциональность и\u00A0дизайн сайта до\u00A0его реализации'
+        },
+        {
+            type: 'card',
+            image: 'button',
+            styleType: 'main',
+            header: 'Кнопки',
+            link:  '/lessons/buttons',
+            color: "bg-background-content",
+            hovercolor:"bg-background-controls",
+            description: 'Общие правила использования'
+        } ,
+        {
+            type: 'card',
+            image: 'input',
+            header: 'Инпуты',
+            styleType: 'main',
+            link:  '/lessons/inputs',
+            color: "bg-background-content",
+            hovercolor:"bg-background-controls",
+            description: 'Позволяют вводить текст в\u00A0пользовательский интерфейс'
+        },
+        {
+            type: 'card',
+            image: 'checkbox',
+            header: 'Чекбоксы',
+            link:  '/lessons/checkbox',
+            styleType: 'main',
+            color: "bg-background-content",
+            hovercolor:"bg-background-controls",
+            description: 'Позволяют выбирать один или несколько элементов из\u00A0списка, а\u00A0также включать или отключать элемент'
+        },
+        {
+            type: 'card',
+            image: 'switch',
+            header: 'Свитчи',
+            link:  '/lessons/switch',
+            styleType: 'main',
+            color: "bg-background-content",
+            hovercolor:"bg-background-controls",
+            description: 'Включают или отключают выбранный элемент'
+        },
+        {
+            type: 'card',
+            image: 'radio',
+            header: 'Радио',
+            link:  '/lessons/radio',
+            styleType: 'main',
+            color: "bg-background-content",
+            hovercolor:"bg-background-controls",
+            description: 'Позволяют выбрать один вариант из\u00A0списка'
+        },
+        {
+            type: 'card',
+            image: 'dropdown',
+            header: 'Выпадающие списки',
+            link:  '/lessons/dropdown',
+            styleType: 'main',
+            color: "bg-background-content",
+            hovercolor:"bg-background-controls",
+            description: 'Отображают список вариантов на\u00A0временном поле'
+        },
+        {
+            type: 'card',
+            image: 'chips',
+            header: 'Чипсы',
+            link:  '/lessons/chips',
+            styleType: 'main',
+            color: "bg-background-content",
+            hovercolor:"bg-background-controls",
+            description: 'Помогают вводить информацию, делать выбор, фильтровать контент или запускать действия'
+        },
+        {
+            type: 'card',
+            image: 'slider',
+            header: 'Слайдеры',
+            styleType: 'main',
+            link:  '/lessons/sitemap',
+            color: "bg-background-content",
+            hovercolor:"bg-background-controls",
+            description: 'Позволяют пользователям выбирать из\u00A0диапазона значений'
+        },
+        {
+            type: 'card',
+            image: 'datePicker',
+            header: 'Выбор даты',
+            link:  '/lessons/sitemap',
+            styleType: 'main',
+            color: "bg-background-content",
+            hovercolor:"bg-background-controls",
+            description: 'Помогает выбрать дату или диапазон дат'
+        },
+        {
+            type: 'card',
+            image: 'timePicker',
+            header: 'Выбор времени',
+            link:  '/lessons/sitemap',
+            styleType: 'main',
+            color: "bg-background-content",
+            hovercolor:"bg-background-controls",
+            description: 'Помогает пользователю выбирать и\u00A0устанавливать определённое время'
+        },
+    ]
+    function findIndexByKey(key, value) {
+        const element = menus.find(item => item[key] === value);
+        return element ? menus.indexOf(element) : -1;
+    }
+    const index=findIndexByKey("link", location)
+
+
   
   const mobileMenu = (currPath) => upperMenuItems.map(el=> {
     return ( 
@@ -81,32 +369,107 @@ function App({children}) {
         <nav className={`bg-background-container ${!menu ? 'hidden' : 'block'} h-full z-30 lg:absolute left-0 flex-col gap-[8px] py-[4px] transition-all duration-1000 pl-2 w-[400px]`}>
           <Menu />
         </nav>
-        <div className='px-4 sm:px-0 col-span-5 lg:col-span-5 flex flex-col gap-6 flex-grow'>
-          {/* <span className='text-base text-text-disable'>{breadcrumb()}</span> */}
-          <div>
-          <Breadcrumbs />
+          <div className='px-4 sm:px-0 col-span-5 lg:col-span-5 flex flex-col gap-6 flex-grow'>
+              {/* <span className='text-base text-text-disable'>{breadcrumb()}</span> */}
+              <div>
+                  <Breadcrumbs/>
+              </div>
+              <main className='grow'>
+                  <div className='p-4'>
+                      {children}
+                  </div>
+              </main>
+              { index != -1 ?
+                  <div className='flex p-4 flex-col mt-36 mb-6'>
+                      <h1 className="text-4xl mb-6">Также будет интересно:</h1>
+                      <div className="flex flex-col lg:flex-row justify-between">
+                          {menus[index - 1].color ?
+                              <div className="h-[320px] content-background">
+                                  <Link to={menus[index - 1].link} className="h-[346px]" key={menus[index - 1].header}>
+                                      <Card header={menus[index - 1].header} description={menus[index - 1].description}
+                                            color={menus[index - 1].color ?? menus[index - 1].colorStyle.color}
+                                            hovercolor={menus[index - 1].hovercolor ?? menus[index - 1].colorStyle.hovercolor}
+                                            type={menus[index - 1].styleType ?? menus[index - 1].styleType}
+                                            image={menus[index - 1].image}>
+                                      </Card>
+                                  </Link>
+                              </div> :
+                              null
+                          }
+                          {  menus[index + 1] ?
+                              <div className="h-[320px] content-background">
+                                  <Link to={menus[index + 1].link} key={menus[index + 1].header}>
+                                      <Card header={menus[index + 1].header} description={menus[index + 1].description}
+                                            color={menus[index + 1].color ?? menus[index + 1].colorStyle.color}
+                                            hovercolor={menus[index + 1].hovercolor ?? menus[index + 1].colorStyle.hovercolor}
+                                            type={menus[index + 1].styleType ?? menus[index + 1].styleType}
+                                            image={menus[index + 1].image}>
+                                      </Card>
+                                  </Link>
+                              </div> :
+                              null
+                          }
+                          {
+                              menus[index + 2]?
+                              <div className="h-[320px] content-background">
+                                  <Link to={menus[index + 2].link} className="h-[346px]" key={menus[index + 2].header}>
+                                      <Card header={menus[index + 2].header} description={menus[index + 2].description}
+                                            color={menus[index + 2].color ?? menus[index + 2].colorStyle.color}
+                                            hovercolor={menus[index + 2].hovercolor ?? menus[index + 2].colorStyle.hovercolor}
+                                            type={menus[index + 2].styleType ?? menus[index + 2].styleType}
+                                            image={menus[index + 2].image}>
+                                      </Card>
+                                  </Link>
+                              </div>:null
+                          }
+                          {menus[index + 3] ?
+                              <div className="h-[320px]  content-background">
+                                  <Link to={menus[index + 3].link} className="h-[346px]" key={menus[index + 3].header}>
+                                      <Card header={menus[index + 3].header} description={menus[index + 3].description}
+                                            color={menus[index + 3].color ?? menus[index + 3].colorStyle.color}
+                                            hovercolor={menus[index + 3].hovercolor ?? menus[index + 3].colorStyle.hovercolor}
+                                            type={menus[index + 3].styleType ?? menus[index + 3].styleType}
+                                            image={menus[index + 3].image}>
+                                      </Card>
+                                  </Link>
+                              </div> : null
+                          }
+                          {!menus[index - 1].color ?
+                              <div className="h-[320px] content-background">
+                                  <Link to={menus[index  + 4].link} className="h-[346px]" key={menus[index + 4].header}>
+                                      <Card header={menus[index + 4].header} description={menus[index + 4].description}
+                                            color={menus[index + 4].color ?? menus[index + 4].colorStyle.color}
+                                            hovercolor={menus[index + 4].hovercolor ?? menus[index + 4].colorStyle.hovercolor}
+                                            type={menus[index + 4].styleType ?? menus[index + 4].styleType}
+                                            image={menus[index + 4].image}>
+                                      </Card>
+                                  </Link>
+                              </div> :
+                              null
+                          }
+                      </div>
+                  </div> : null
+              }
           </div>
-            <main className='grow'>
-              <div className='p-4'>
-                  {children}
-              </div>
-            </main>  
-         </div>
-       </div>
+      </div>
      </div>
-     <footer className='w-full justify-center flex px-[50px] pt-6 pb-12 gap-6 items-center border-t flex-wrap lg:flex-nowrap'>
-              <Link to="/">{logo}</Link>
-              <div className='grow'>
-                <p className="font-inter text-sm pr-0 max-w-[700px]">Проект, который познакомит тебя с основами дизайна пользовательского интерфейса. Создан в рамках дипломной работы на программе «Дизайн и программирование» в Школе дизайна НИУ ВШЭ</p> 
-              </div>
-              <div className='font-inter text-sm min-w-64'>
-                <p>Сделала студентка <DButton type="link" href="https://hz.kuda">Вишневская Евгения</DButton></p>
-                <p>под кураторством <DButton type="link" href="https://hz.kuda">Захара Дня</DButton></p>
-              </div> 
-            </footer> 
-    <div className='sticky bottom-0 bg-background-container border-t md:hidden h-16 grid grid-cols-3'>
-        {mobileMenu(location)}
-    </div>
+
+       <footer
+           className='w-full justify-center flex px-[50px] pt-6 pb-12 gap-6 items-center border-t flex-wrap lg:flex-nowrap'>
+           <Link to="/">{logo}</Link>
+           <div className='grow'>
+               <p className="font-inter text-sm pr-0 max-w-[700px]">Проект, который познакомит тебя с основами дизайна
+                   пользовательского интерфейса. Создан в рамках дипломной работы на программе «Дизайн и
+                   программирование» в Школе дизайна НИУ ВШЭ</p>
+           </div>
+           <div className='font-inter text-sm min-w-64'>
+               <p>Сделала студентка <DButton type="link" href="https://hz.kuda">Вишневская Евгения</DButton></p>
+               <p>под кураторством <DButton type="link" href="https://hz.kuda">Захара Дня</DButton></p>
+           </div>
+       </footer>
+       <div className='sticky bottom-0 bg-background-container border-t md:hidden h-16 grid grid-cols-3'>
+           {mobileMenu(location)}
+       </div>
    </div>
   );
 }

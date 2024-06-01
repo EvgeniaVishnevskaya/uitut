@@ -398,13 +398,13 @@ export default function Dropdown() {
             </div>
 
             <div className='flex justify-between gap-6 flex-wrap'>
-                <Link to='/lessons/layout'>
+                <Link to='/lessons/radio'>
                     <DButton size="large">Предыдущая глава</DButton>
                 </Link>
                 <Link to={'/lessons'}>
                     <DButton size="large">Все уроки</DButton>
                 </Link>
-                <Link to='/lessons/logo'>
+                <Link to='/lessons/chips'>
                     <DButton size="large" type="primary">Следующая глава</DButton>
                 </Link>
             </div>

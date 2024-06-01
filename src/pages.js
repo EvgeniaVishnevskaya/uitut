@@ -26,6 +26,7 @@ import Checkbox from "./pages/lessons/checkbox";
 import Switch from "./pages/lessons/switch";
 import Radio from "./pages/lessons/radio";
 import Dropdown from "./pages/lessons/dropdown";
+import Chips from "./pages/lessons/chips";
 
 const collection = [
     {
@@ -229,7 +230,7 @@ const collection = [
                         name: 'chips',
                         route: 'chips',
                         title: 'Чипсы',
-                        component: <Sitemap />,
+                        component: <Chips/>,
                         children: []        
                     },
                     {
