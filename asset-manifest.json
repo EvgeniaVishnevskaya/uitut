@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/uitut/static/css/main.63996c17.css",
-    "main.js": "/uitut/static/js/main.fa591c78.js",
+    "main.css": "/uitut/static/css/main.ebf81f47.css",
+    "main.js": "/uitut/static/js/main.302443dc.js",
     "static/media/background_buttons.png": "/uitut/static/media/background_buttons.0cb9a5ce8bd6befdd13d.png",
     "static/media/prototype_1.png": "/uitut/static/media/prototype_1.a6c0a25a4469d39fecce.png",
     "static/media/sitemap_2.png": "/uitut/static/media/sitemap_2.44fccd8dc7c53c0060c2.png",
@@ -9,21 +9,28 @@
     "static/media/adaptive_logo.png": "/uitut/static/media/adaptive_logo.47c3f2b0f6843f032827.png",
     "static/media/system_logo.png": "/uitut/static/media/system_logo.8e28a0a150d2d6458458.png",
     "static/media/borders_1.png": "/uitut/static/media/borders_1.ae5e66363057b7b7aabc.png",
+    "static/media/divider_background.png": "/uitut/static/media/divider_background.1e5a199bc99c80a595ba.png",
     "static/media/menu_logo.png": "/uitut/static/media/menu_logo.e1f91b4e675ff36e16ca.png",
+    "static/media/background_4.png": "/uitut/static/media/background_4.47ff8b11c84bb262d466.png",
+    "static/media/background_5.png": "/uitut/static/media/background_5.8ae536736ecbe0b26555.png",
+    "static/media/background_2.png": "/uitut/static/media/background_2.4c8490eae618fbbece2c.png",
     "static/media/sitemap_1.png": "/uitut/static/media/sitemap_1.6ad89ca25b101771ed66.png",
+    "static/media/background_6.png": "/uitut/static/media/background_6.392123be705dcaa60cc7.png",
+    "static/media/background_3.png": "/uitut/static/media/background_3.73cf8dcb875314f035a9.png",
     "static/media/orange.png": "/uitut/static/media/orange.9bfdfe2fe877a2ee0bd3.png",
     "static/media/blue.png": "/uitut/static/media/blue.2a7faca526ec7a616f2d.png",
+    "static/media/background_1.png": "/uitut/static/media/background_1.b31dd6b9c1c1f8ffd44c.png",
     "static/media/links_1.png": "/uitut/static/media/links_1.59f45af9f0f1414ab801.png",
     "static/media/pink.png": "/uitut/static/media/pink.45e44aae38a2397a1da5.png",
     "static/media/system_1.png": "/uitut/static/media/system_1.b7d84db8d171f0982216.png",
     "static/media/prototype_3.png": "/uitut/static/media/prototype_3.48fe87a6bd9be2b50408.png",
     "static/media/prototype_2.png": "/uitut/static/media/prototype_2.87d7612cf6f19fbd867d.png",
     "index.html": "/uitut/index.html",
-    "main.63996c17.css.map": "/uitut/static/css/main.63996c17.css.map",
-    "main.fa591c78.js.map": "/uitut/static/js/main.fa591c78.js.map"
+    "main.ebf81f47.css.map": "/uitut/static/css/main.ebf81f47.css.map",
+    "main.302443dc.js.map": "/uitut/static/js/main.302443dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.63996c17.css",
-    "static/js/main.fa591c78.js"
+    "static/css/main.ebf81f47.css",
+    "static/js/main.302443dc.js"
   ]
 }
