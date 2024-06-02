@@ -7,7 +7,7 @@ export default function Cards() {
     return (
         <div className="flex flex-col gap-36">
             <div className="flex flex-col gap-12">
-                <h1 className="text-3xl">Карточки</h1>
+                <h1 className="text-4xl">Карточки</h1>
                 <div className='flex flex-col lg:flex-row gap-6'>
                     <span
                         className='text-2xl font-light font-inter w-full lg:w-1/2'>Карточки служат контейнерами для&nbsp;хранения связанных элементов информации, создавая чёткую и&nbsp;организованную структуру на&nbsp;странице.</span>

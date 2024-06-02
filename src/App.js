@@ -18,10 +18,6 @@ function App({children}) {
   const upperMenuItems = usePages('expandable')
     const menus = [
         {
-            type: 'text',
-            text: "Создание нового интерфейса для цифрового продукта начинается с\u00A0разработки логики продукта."
-        },
-        {
             type: 'card',
             image: 'sitemap',
             header: 'Карта сайта',
@@ -268,18 +264,94 @@ function App({children}) {
             image: 'slider',
             header: 'Слайдеры',
             styleType: 'main',
-            link:  '/lessons/sitemap',
+            link:  '/lessons/slider',
             color: "bg-background-content",
             hovercolor:"bg-background-controls",
             description: 'Позволяют пользователям выбирать из\u00A0диапазона значений'
+        },
+        {
+            type: 'card',
+            image: 'divider',
+            styleType: 'orange',
+            color: "bg-background-orange-300",
+            hovercolor:"bg-background-orange-200",
+            header: 'Драйвер',
+            link:  '/lessons/divider',
+            description: 'Элемент, визуально разделяющий контент'
+        } ,
+        {
+            type: 'card',
+            image: 'card',
+            header: 'Карточки',
+            color: "bg-background-orange-300",
+            hovercolor:"bg-background-orange-200",
+            styleType: 'orange',
+            link:  '/lessons/card',
+            description: 'Контейнер для\u00A0хранения связанных элементов информации'
+        },
+        {
+            type: 'card',
+            image: 'carousel',
+            color: "bg-background-orange-300",
+            hovercolor:"bg-background-orange-200",
+            styleType: 'orange',
+            header: 'Карусель',
+            link:  '/lessons/carousel',
+            description: 'Интерактивный элемент дизайна, который содержит различные визуальные элементы'
+        },
+        {
+            type: 'card',
+            image: 'dialog',
+            styleType: 'orange',
+            color: "bg-background-orange-300",
+            hovercolor:"bg-background-orange-200",
+            header: 'Диалоговое окно',
+            link:  '/lessons/dialog',
+            description: 'Предоставляет возможность коммуникации между\u00A0системой и\u00A0пользователем'
         },
 
     ]
     function findIndexByKey(key, value) {
         const element = menus.find(item => item[key] === value);
-        return element ? menus.indexOf(element) : -1;
+        const index = element ? menus.indexOf(element) : -1;
+        let array = []
+        if(menus.length-1 === index){
+
+            array.push(menus[index-1])
+            array.push(menus[0])
+            array.push(menus[1])
+            array.push(menus[2])
+        }else if(menus.length-2 === index){
+
+            array.push(menus[index-1])
+            array.push(menus[index+1])
+            array.push(menus[0])
+            array.push(menus[1])
+        }else if(menus.length-3 === index){
+
+            array.push(menus[index-1])
+            array.push(menus[index+1])
+            array.push(menus[index+2])
+            array.push(menus[0])
+        }else if(index === 0){
+
+            array.push(menus[1])
+            array.push(menus[2])
+            array.push(menus[3])
+            array.push(menus[4])
+        }else if(index === -1){
+
+            return array
+        }else{
+            console.log("5")
+                array.push(menus[index-1])
+                array.push(menus[index+1])
+                array.push(menus[index+2])
+                array.push(menus[index+3])
+        }
+        return array
     }
-    const index=findIndexByKey("link", location)
+    const recomend=findIndexByKey("link", location)
 
 
   
@@ -360,73 +432,25 @@ function App({children}) {
                       {children}
                   </div>
               </main>
-              { index != -1 ?
+              { recomend.length>0 ?
                   <div className='flex p-4 flex-col mt-36 mb-6'>
                       <h1 className="text-4xl mb-6">Также будет интересно:</h1>
                       <div className="flex flex-col lg:flex-row justify-between">
-                          {menus[index - 1].color ?
-                              <div className="h-[320px] content-background">
-                                  <Link to={menus[index - 1].link} className="h-[346px]" key={menus[index - 1].header}>
-                                      <Card header={menus[index - 1].header} description={menus[index - 1].description}
-                                            color={menus[index - 1].color ?? menus[index - 1].colorStyle.color}
-                                            hovercolor={menus[index - 1].hovercolor ?? menus[index - 1].colorStyle.hovercolor}
-                                            type={menus[index - 1].styleType ?? menus[index - 1].styleType}
-                                            image={menus[index - 1].image}>
-                                      </Card>
-                                  </Link>
-                              </div> :
-                              null
-                          }
-                          {  menus[index + 1] ?
-                              <div className="h-[320px] content-background">
-                                  <Link to={menus[index + 1].link} key={menus[index + 1].header}>
-                                      <Card header={menus[index + 1].header} description={menus[index + 1].description}
-                                            color={menus[index + 1].color ?? menus[index + 1].colorStyle.color}
-                                            hovercolor={menus[index + 1].hovercolor ?? menus[index + 1].colorStyle.hovercolor}
-                                            type={menus[index + 1].styleType ?? menus[index + 1].styleType}
-                                            image={menus[index + 1].image}>
-                                      </Card>
-                                  </Link>
-                              </div> :
-                              null
-                          }
                           {
-                              menus[index + 2]?
-                              <div className="h-[320px] content-background">
-                                  <Link to={menus[index + 2].link} className="h-[346px]" key={menus[index + 2].header}>
-                                      <Card header={menus[index + 2].header} description={menus[index + 2].description}
-                                            color={menus[index + 2].color ?? menus[index + 2].colorStyle.color}
-                                            hovercolor={menus[index + 2].hovercolor ?? menus[index + 2].colorStyle.hovercolor}
-                                            type={menus[index + 2].styleType ?? menus[index + 2].styleType}
-                                            image={menus[index + 2].image}>
-                                      </Card>
-                                  </Link>
-                              </div>:null
-                          }
-                          {menus[index + 3] ?
-                              <div className="h-[320px]  content-background">
-                                  <Link to={menus[index + 3].link} className="h-[346px]" key={menus[index + 3].header}>
-                                      <Card header={menus[index + 3].header} description={menus[index + 3].description}
-                                            color={menus[index + 3].color ?? menus[index + 3].colorStyle.color}
-                                            hovercolor={menus[index + 3].hovercolor ?? menus[index + 3].colorStyle.hovercolor}
-                                            type={menus[index + 3].styleType ?? menus[index + 3].styleType}
-                                            image={menus[index + 3].image}>
-                                      </Card>
-                                  </Link>
-                              </div> : null
-                          }
-                          {!menus[index - 1].color ?
-                              <div className="h-[320px] content-background">
-                                  <Link to={menus[index  + 4].link} className="h-[346px]" key={menus[index + 4].header}>
-                                      <Card header={menus[index + 4].header} description={menus[index + 4].description}
-                                            color={menus[index + 4].color ?? menus[index + 4].colorStyle.color}
-                                            hovercolor={menus[index + 4].hovercolor ?? menus[index + 4].colorStyle.hovercolor}
-                                            type={menus[index + 4].styleType ?? menus[index + 4].styleType}
-                                            image={menus[index + 4].image}>
-                                      </Card>
-                                  </Link>
-                              </div> :
-                              null
+                              recomend.map((el)=> (
+                                  <div className="h-[346px] content-background">
+                                      <Link to={el.link} className="h-[346px]"
+                                            key={el.header}>
+                                          <Card header={el.header}
+                                                description={el.description}
+                                                color={el.color ?? el.colorStyle.color}
+                                                hovercolor={el.hovercolor ?? el.colorStyle.hovercolor}
+                                                type={el.styleType ?? el.styleType}
+                                                image={el.image}>
+                                          </Card>
+                                      </Link>
+                                  </div>
+                              ))
                           }
                       </div>
                   </div> : null

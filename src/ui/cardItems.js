@@ -765,8 +765,77 @@ export default function GetImage({name}) {
             </svg>
 
         ),
-        datePicker: (''),
-        timePicker: ('')
+        divider: (<svg xmlns="http://www.w3.org/2000/svg" width="190" height="1" viewBox="0 0 190 1" fill="none">
+            <line y1="0.5" x2="190" y2="0.5" stroke="#FAFBFF"/>
+        </svg>),
+        card: (<svg xmlns="http://www.w3.org/2000/svg" width="138" height="100" viewBox="0 0 138 100" fill="none">
+            <g opacity="0.8">
+                <rect x="1.5" y="2" width="135" height="96" rx="7.5" fill="#FFE7D8"/>
+                <rect x="1.5" y="2" width="135" height="96" rx="7.5" stroke="#F76507" stroke-width="3"/>
+                <path
+                    d="M11 17.5C11 14.1863 13.6863 11.5 17 11.5H121C124.314 11.5 127 14.1863 127 17.5V54.5C127 57.8137 124.314 60.5 121 60.5H17C13.6863 60.5 11 57.8137 11 54.5V17.5Z"
+                    fill="#FDAE7B"/>
+                <rect x="11" y="70.5" width="116" height="4" rx="2" fill="#FDAE7B"/>
+                <rect x="11" y="84.5" width="45" height="4" rx="2" fill="#FDAE7B"/>
+            </g>
+        </svg>),
+        carousel: (<svg xmlns="http://www.w3.org/2000/svg" width="196" height="92" viewBox="0 0 196 92" fill="none">
+            <g opacity="0.8">
+                <rect x="1.5" y="1.5" width="193" height="89" rx="7.5" fill="#FFE7D8"/>
+                <rect x="1.5" y="1.5" width="193" height="89" rx="7.5" stroke="#F76507" stroke-width="3"/>
+                <path
+                    d="M11 15.75C11 13.1266 13.1266 11 15.75 11C18.3734 11 20.5 13.1266 20.5 15.75V76.25C20.5 78.8734 18.3734 81 15.75 81C13.1266 81 11 78.8734 11 76.25V15.75Z"
+                    fill="#FDAE7B"/>
+                <path
+                    d="M30.5 15.75C30.5 13.1266 32.6266 11 35.25 11C37.8734 11 40 13.1266 40 15.75V76.25C40 78.8734 37.8734 81 35.25 81C32.6266 81 30.5 78.8734 30.5 76.25V15.75Z"
+                    fill="#FDAE7B"/>
+                <path
+                    d="M50 17C50 13.6863 52.6863 11 56 11H179C182.314 11 185 13.6863 185 17V75C185 78.3137 182.314 81 179 81H56C52.6863 81 50 78.3137 50 75V17Z"
+                    fill="#FDAE7B"/>
+            </g>
+        </svg>),
+        dialog: (<svg xmlns="http://www.w3.org/2000/svg" width="138" height="94" viewBox="0 0 138 94" fill="none">
+            <g opacity="0.8">
+                <rect x="1.5" y="1.5" width="135" height="91" rx="7.5" fill="#FFE7D8"/>
+                <rect x="1.5" y="1.5" width="135" height="91" rx="7.5" stroke="#F76507" stroke-width="3"/>
+                <rect x="11" y="11" width="116" height="4" rx="2" fill="#FDAE7B"/>
+                <rect x="11" y="25" width="116" height="4" rx="2" fill="#FDAE7B"/>
+                <rect x="11" y="39" width="116" height="4" rx="2" fill="#FDAE7B"/>
+                <rect x="11" y="53" width="45" height="4" rx="2" fill="#FDAE7B"/>
+                <g filter="url(#filter0_d_444_19805)">
+                    <rect x="11" y="67" width="56" height="16" rx="6" fill="#F76507"/>
+                    <rect x="11.5" y="67.5" width="55" height="15" rx="5.5" stroke="#F76507"/>
+                </g>
+                <g filter="url(#filter1_d_444_19805)">
+                    <rect x="71.5" y="67.5" width="55" height="15" rx="5.5" stroke="#F76507"
+                          shape-rendering="crispEdges"/>
+                </g>
+            </g>
+            <defs>
+                <filter id="filter0_d_444_19805" x="11" y="67" width="56" height="18" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                   result="hardAlpha"/>
+                    <feOffset dy="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.04 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_444_19805"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_444_19805" result="shape"/>
+                </filter>
+                <filter id="filter1_d_444_19805" x="71" y="67" width="56" height="18" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                   result="hardAlpha"/>
+                    <feOffset dy="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.04 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_444_19805"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_444_19805" result="shape"/>
+                </filter>
+            </defs>
+        </svg>),
 
 
     }[name]

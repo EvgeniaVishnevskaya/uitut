@@ -24,7 +24,7 @@ export default function Divider() {
                 </div>
             </div>
             <div className="flex flex-col gap-12">
-                <h1 className="text-3xl">Драйвер</h1>
+                <h1 className="text-4xl">Драйвер</h1>
                 <div className='flex flex-col lg:flex-row gap-6'>
                     <span className='text-2xl font-light font-inter w-full lg:w-1/2'>Драйверы, или&nbsp;разделители, являются важным элементом пользовательского интерфейса. Они&nbsp;помогают структурировать информацию, делая её&nbsp;более читаемой и&nbsp;понятной для&nbsp;пользователя. Разделители могут быть использованы в&nbsp;различных местах интерфейса, включая меню, списки и&nbsp;формы.</span>
                     <div

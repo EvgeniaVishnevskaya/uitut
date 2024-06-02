@@ -4,17 +4,16 @@ import CardGenerate from "../ui/cardGenerate";
 export default function Lessons() {
     const menus = [
         {
-            categoryName: 'Процесс работы', 
+            categoryName: 'Процесс работы',
+            text: "Создание нового интерфейса для цифрового продукта начинается с\u00A0разработки логики продукта.",
+            image:require("../background/images/background_1.png"),
+            gradient:"linear-gradient(109deg, #FFA9DA 9.14%, #AE40E2 91%)",
             colorStyle: {
                 color: "bg-background-pink-300",
                 hovercolor:"bg-background-pink-200"
             },
             styleType: 'pink',
             elements: [
-                {
-                    type: 'text',
-                    text: "Создание нового интерфейса для цифрового продукта начинается с\u00A0разработки логики продукта."
-                },
                 {
                     type: 'card',
                     image: 'sitemap',
@@ -37,6 +36,9 @@ export default function Lessons() {
                 color: "bg-background-content",
                 hovercolor:"bg-background-controls"
             },
+            gradient:"radial-gradient(248.91% 113.34% at 90.83% 13.06%, #0C316F 0%, #165ED4 100%)",
+            image:require("../background/images/background_2.png"),
+            text: "При проектировании варфреймов важно заранее учитывать, под какие конкретные устройства будет адаптирован цифровой продукт.",
             styleType: 'main',
             elements: [
                 {
@@ -44,7 +46,7 @@ export default function Lessons() {
                     image: 'adaptive',
                     header: 'Адаптивная вёрстка',
                     link:  '/lessons/adaptive',
-                    description: 'Создание нескольких версий сайта для разных типов устройств'
+                    description: 'Создание нескольких версий сайта для\u00A0разных типов устройств'
                 } ,
                 {
                     type: 'card',
@@ -52,16 +54,15 @@ export default function Lessons() {
                     header: 'Респонсив дизайн',
                     link:  '/lessons/responsive',
                     description: 'Создание гибких макетов для изменения внешнего вида сайта в\u00A0зависимости от\u00A0размера экрана'
-                }, 
-                {
-                    type: 'text',
-                    text: "При проектировании варфреймов важно заранее учитывать, под какие конкретные устройства будет адаптирован цифровой продукт."
-                }, 
+                },
                    
             ]
         },
         {
-            categoryName: 'Пространство', 
+            categoryName: 'Пространственная \n система',
+            text: "Пространственные системы, сетки и\u00A0лейауты предоставляют правила, которые дают вашим дизайнам постоянный ритм, ограничивают принятие решений и\u00A0помогают командам оставаться на\u00A0одном уровне.",
+            image:require("../background/images/background_3.png"),
+            gradient:"radial-gradient(174.82% 112.97% at 50% 125%, #F76508 0%, #F78282 96.35%)",
             colorStyle: {
                 color: "bg-background-orange-300",
                 hovercolor:"bg-background-orange-200"
@@ -69,15 +70,11 @@ export default function Lessons() {
             styleType: 'orange',
             elements: [
                 {
-                    type: 'text',
-                    text: "Пространственные системы, сетки и\u00A0лейауты предоставляют правила, которые дают вашим дизайнам постоянный ритм, ограничивают принятие решений и\u00A0помогают командам оставаться на\u00A0одном уровне."
-                }, 
-                {
                     type: 'card',
                     image: 'system',
                     header: 'Система',
                     link:  '/lessons/system',
-                    description: 'Что такое пространственная система?'
+                    description: 'Что\u00A0такое пространственная система?'
                 } ,
                 {
                     type: 'card',
@@ -113,11 +110,14 @@ export default function Lessons() {
             ]
         }, 
         {
-            categoryName: 'Элементы навигации', 
+            categoryName: 'Элементы \n навигации',
+            image:require("../background/images/background_4.png"),
+            text: "Чем понятнее и\u00A0удобнее навигация, тем выше вероятность того, что посетитель найдет нужную информацию, совершит целевое действие и\u00A0впоследствии вернется на\u00A0ресурс.",
             colorStyle: {
                 color: "bg-background-pink-300",
                 hovercolor:"bg-background-pink-200"
             },
+            gradient:"linear-gradient(109deg, #FFA9DA 9.14%, #AE40E2 91%)",
             styleType: 'pink',
             elements: [
                  
@@ -134,10 +134,6 @@ export default function Lessons() {
                     header: 'Логотип',
                     link:  '/lessons/logo',
                     description: 'Привычный для пользователя паттерн\u00A0— добавление в\u00A0логотип ссылки на\u00A0главную страницу ресурса'
-                }, 
-                {
-                    type: 'text',
-                    text: "Чем понятнее и\u00A0удобнее навигация, тем выше вероятность того, что посетитель найдет нужную информацию, совершит целевое действие и\u00A0впоследствии вернется на\u00A0ресурс."
                 },
                 
                 {
@@ -187,17 +183,16 @@ export default function Lessons() {
             ]
         },
         {
-            categoryName: 'Элементы взаимодействия', 
+            categoryName: 'Элементы \n взаимодействия',
+            image:require("../background/images/background_5.png"),
+            text: "При\u00A0проектировании варфреймов важно заранее учитывать, под\u00A0какие конкретные устройства будет адаптирован цифровой продукт.",
             colorStyle: {
                 color: "bg-background-content",
                 hovercolor:"bg-background-controls"
             },
+            gradient:"radial-gradient(248.91% 113.34% at 90.83% 13.06%, #0C316F 0%, #165ED4 100%)",
             styleType: 'main',
             elements: [
-                {
-                    type: 'text',
-                    text: "Добавляют интерактивность в\u00A0пользовательский интерфейс, предоставляя пользователю точки соприкосновения при навигации по\u00A0ним. Кнопки, полосы прокрутки, пункты меню и\u00A0чекбоксы."
-                }, 
                 {
                     type: 'card',
                     image: 'button',
@@ -224,7 +219,7 @@ export default function Lessons() {
                     image: 'switch',
                     header: 'Свитчи',
                     link:  '/lessons/switch',
-                    description: 'Включают или отключают выбранный элемент'
+                    description: 'Включают или\u00A0отключают выбранный элемент'
                 }, 
                 {
                     type: 'card',
@@ -259,18 +254,17 @@ export default function Lessons() {
             ]
         },
         {
-            categoryName: 'Контентсодержащие элементы',
+            categoryName: "Контентсодержащие \n элементы",
+            image:require("../background/images/background_6.png"),
+            gradient:"radial-gradient(174.82% 112.97% at 50% 125%, #F76508 0%, #F78282 96.35%)",
+            text: "Элементы содержания хранят информацию и\u00A0действия, включая другие компоненты, такие как\u00A0кнопки, меню или\u00A0чипсы.",
+            textSecond:"Основная функция содержащих элементов\u00A0— обеспечение чёткого и\u00A0понятного представления информации. Они\u00A0помогают пользователям навигироваться по\u00A0интерфейсу, облегчая взаимодействие с\u00A0ним.",
             colorStyle: {
                 color: "bg-background-orange-300",
                 hovercolor:"bg-background-orange-200"
             },
             styleType: 'orange',
             elements: [
-                {
-                    type: 'text',
-                    text: "Элементы содержания хранят информацию и действия, включая другие компоненты, такие как кнопки, меню или чипсы.  \n" +
-                        "Основная функция содержащих элементов — обеспечение чёткого и понятного представления информации. Они помогают пользователям навигироваться по интерфейсу, облегчая взаимодействие с ним. "
-                },
                 {
                     type: 'card',
                     image: 'divider',
@@ -283,7 +277,7 @@ export default function Lessons() {
                     image: 'card',
                     header: 'Карточки',
                     link:  '/lessons/card',
-                    description: 'Контейнер для хранения связанных элементов информации'
+                    description: 'Контейнер для\u00A0хранения связанных элементов информации'
                 },
                 {
                     type: 'card',
@@ -297,7 +291,7 @@ export default function Lessons() {
                     image: 'dialog',
                     header: 'Диалоговое окно',
                     link:  '/lessons/dialog',
-                    description: 'Предоставляет возможность коммуникации между системой и пользователем'
+                    description: 'Предоставляет возможность коммуникации между\u00A0системой и\u00A0пользователем'
                 },
 
             ]

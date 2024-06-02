@@ -31,6 +31,7 @@ import Slider from "./pages/lessons/slider";
 import Divider from "./pages/lessons/divider";
 import Cards from "./pages/lessons/cards";
 import Carousel from "./pages/lessons/carousel";
+import Dialog from "./pages/lessons/dialog";
 
 const collection = [
     {
@@ -274,7 +275,7 @@ const collection = [
                         name: 'dialog',
                         route: 'dialog',
                         title: 'Диалоговое окно',
-                        component: <Prototype />,
+                        component: <Dialog/>,
                         children: []        
                     }
                 ]      
@@ -289,13 +290,7 @@ const collection = [
     //     component: <Docs />,
     //     children: []        
     // },
-    {
-        name: 'contacts',
-        route: 'contacts',
-        title: 'Контакты',
-        component: <Contacts />,
-        children: []        
-    }
+
 ]
 
 export const usePages = (type='default', explicitArray=[]) => {

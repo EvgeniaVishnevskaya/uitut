@@ -551,7 +551,7 @@ export default function Slider() {
                 <Link to={'/lessons'}>
                     <DButton size="large">Все уроки</DButton>
                 </Link>
-                <Link to='/lessons/sitemap'>
+                <Link to='/lessons/divider'>
                     <DButton size="large" type="primary">Следующая глава</DButton>
                 </Link>
             </div>

@@ -88,7 +88,7 @@ export default function Adaptive() {
                 </div>
             </div>
             <p className="text-lg font-inter w-full lg:w-3/4">Стоит обратить внимание, что для адаптивной вёрстки дизайнер создаёт отдельно макет для каждого разрешения экрана.</p>
-            <div className='flex justify-end gap-6 flex-wrap'>
+            <div className='flex justify-between gap-6 flex-wrap'>
                     <Link to='/lessons/prototype'>
                         <DButton size="large">Предыдущая глава</DButton>
                     </Link>
